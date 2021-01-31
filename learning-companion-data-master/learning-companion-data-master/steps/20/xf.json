@@ -1,0 +1,133 @@
+[
+  {
+    "title": "Inleiding",
+    "subSteps": [
+      {
+        "title": "Inleiding",
+        "mdString": "Bij de ijkingstoets heb je 22 oefeningen opgelost die peilden naar je voorkennis voor de opleidingen fysica & sterrenkunde, informatica of wiskunde. \nVia dit platform krijg je persoonlijke feedback op je resultaat op de ijkingstoets.",
+        "key": "egrhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Feedbackcode",
+        "mdString": "###### Feedback code\n@FeedbackCode\n",
+        "key": "7khgm8rsp3y",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Ijkingstoets",
+    "subSteps": [
+      {
+        "title": "Totaalscore",
+        "mdString": "###### Totaalscore\nHet diagram toont dat je een score van **@score(totaal) op 20** haalde op de ijkingstoets.\nJe beantwoordde <<<@aantalJuist(totaal) vraag/vragen>>> juist, <<<@aantalFout(totaal) vraag/vragen>>> fout en liet <<<@aantalBlanco(totaal) vraag/vragen>>> open.\n@ScoreDonut(totaal)\nBEGIN0[als @geslaagd = true]\nProficiat, je bent geslaagd voor de ijkingstoets! Aan de Faculteit Wetenschappen zijn we ervan overtuigd dat je voldoende wiskundige kennis en vaardigheden hebt om te starten aan een opleiding fysica, informatica of wiskunde. Succesvolle studies aan de universiteit vereisen niet alleen goede basiskennis en vaardigheden, maar ook de motivatie en inzet om je gedurende langere periodes intensief aan je studies te wijden en om moeilijke hindernissen te durven en willen nemen. De eerste inspanning die je alvast geleverd hebt, is je deelname aan de ijkingstoets: proficiat hiervoor!  Nu komt het erop aan dit verder te zetten. We wensen je veel succes bij je studies!\nEINDE0\nBEGIN0[als @geslaagd = false]\nJe bent niet geslaagd. Wat nu? De wiskundige kennis en vaardigheden die in deze ijkingstoets getest werden, geven je een momentopname van je academische potentieel.  De studieresultaten die je eerder behaalde in het secundair onderwijs vullen dit plaatje verder aan: kon je het niveau van je richting gemakkelijk aan? Was je een regelmatige student? \n\nOm je slaagkansen aan de universiteit te vergroten, raden we je aan om actie te ondernemen en je wiskundevoorkennis bij te spijkeren. Je vindt het aanbod onder het tabblad Begeleiding. \n\nAls je vragen hebt bij je studiekeuze, neem dan contact op met de studieloopbaanbegeleider van jouw opleiding via slb.bachelor.fysica@kuleuven.be , slb.bachelor.informatica@kuleuven.be of slb.bachelor.wiskunde@kuleuven.be \nEINDE0",
+        "key": "egrhjnfjzesdgsd",
+        "visible": true
+      },
+      {
+        "title": "Globale Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers. De score wordt gegeven op 20.\nJe bevindt je in de groep: @scoreGroep(totaal)\n@PuntenBar(totaal)",
+        "key": "egrhjnsdgfvdfj",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Studieresultaten deelnemers vorig jaar\nDeze sectie toont hoe vroegere deelnemers van de ijkingstoets gepresteerd hebben tijdens de examens in januari uitgedrukt via hun cumulatieve studie-efficiëntie (CSE). De CSE komt overeen met de som van de studiepunten van de vakken waarvoor de student geslaagd is, gedeeld door de som van de studiepunten van alle vakken van de student. Elk vak in het hoger onderwijs krijgt aan aantal studiepunten toegewezen, afhankelijk van de studietijd die je er aan zal besteden. Vakken van 6 studiepunten zullen beduidend meer tijd in beslag nemen dan vakken van 3 studiepunten.\n@PuntenCSEFlow",
+        "visible": false
+      },
+      {
+        "title": "Resultaat per vraag",
+        "mdString": "###### Resultaat per vraag\nDeze sectie toont per vraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. \nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(totaal)",
+        "key": "egrffddgdhjnfj",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Leervaardigheden",
+    "subSteps": [
+      {
+        "title": "Concentratie",
+        "mdString": "###### Concentratie\n@DeelnameConcentratieFlow",
+        "key": "egdfefgerezzaj",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Concentratie vorige studenten vs Studieresultaten\n@ConcentratieCSEFlow",
+        "key": "zeazdfefgdhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Motivatie",
+        "mdString": "###### Motivatie\n@DeelnameMotivatieFlow",
+        "key": "45445eddfefgdhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Motivatie vorige studenten vs Studieresultaten\n@MotivatieCSEFlow",
+        "key": "egdfefazeqseqnfj",
+        "visible": true
+      },
+      {
+        "title": "Tijdsbeheer",
+        "mdString": "###### Tijdsbeheer\n@DeelnameTijdsbeheerFlow",
+        "key": "szqefgdhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Tijdsbeheer vorige studenten vs Studieresultaten\n@TijdsbeheerCSEFlow",
+        "key": "eezrzesgeddhjnfj",
+        "visible": true
+      }
+    ],
+    "visible": false
+  },
+  {
+    "title": "Secundair onderwijs",
+    "subSteps": [
+      {
+        "title": "Klassenraad",
+        "mdString": "###### Advies Klassenraad\nOp de enquête bij de ijkingstoets rapporteerde jij een @student.klassenRaadAdvies advies van de klassenraad.\nDeze sectie toont een positionering van jouw advies ten opzichte van dat van de andere deelnemers.\n@DeelnameAdviesFlow\n",
+        "key": "egdfefgdhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Advies Klassenraad vorige studenten vs Studieresultaten\nDeze sectie toont hoe vroegere deelnemers van de ijkingstoets gepresteerd hebben tijdens de examens in januari uitgedrukt via hun cumulatieve studie- efficiëntie.\n@AdviesCSEFlow",
+        "key": "egdfetregrddhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Wiskunde",
+        "mdString": "###### Resultaten wiskunde secundair onderwijs\nOp de enquête bij de ijkingstoets rapporteerde jij een wiskundepercentage van @student.wiskundePercentage.\nJouw niveau van wiskunde is belangrijk bij het aanvatten van de studie. Eerst en vooral is het natuurlijk belangrijk dat je vooropleiding een voldoende sterk wiskundepakket had: onze opleiding verwacht immers minstens 6 uur wiskunde. Bijkomend is het percentage wiskunde dat je behaalde in het secundair onderwijs is een belangrijke maat voor jouw wiskundevoorkennis.\nDeze sectie toont een positionering van jouw wiskundeniveau ten opzichte van dat van de andere deelnemers.\n@DeelnameWiskundeFlow",
+        "key": "elmfewzropov",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Resultaten wiskunde secundair onderwijs vorige studenten vs Studieresultaten\nDeze sectie toont hoe vroegere deelnemers van de ijkingstoets gepresteerd hebben tijdens de examens in januari uitgedrukt via hun cumulatieve studie-efficiëntie.\n@WiskundeCSEFlow",
+        "key": "eezzzezfgdhjnfj",
+        "visible": true
+      }
+    ],
+    "visible": false
+  },
+  {
+    "title": "Begeleiding",
+    "subSteps": [
+      {
+        "title": "Begeleiding",
+        "mdString": "###### Begeleiding\n\n**Voor studenten bachelor in de informatica:**\nAls je niet geslaagd bent op de ijkingstoets raden we je aan de drie voorkennislessen door te nemen die je kan terugvinden op de Toledopagina van Wiskunde I, onder Studiebegeleiding. Ook als je geslaagd bent voor de ijkingstoets maar denkt voordeel te hebben bij een opfrissing van je voorkennis kan je deze lessen uiteraard doornemen. Deze lessen zijn een verkorte versie van de zomercursus wiskunde, maar de inhoud is specifiek gericht op de eerste hoofdstukken van Wiskunde I. Voor verdere begeleiding van Wiskunde I kan je via Toledo een afspraak maken met studiebegeleider Annouk Van Vlierden.\n\n**Voor studenten bachelor in de fysica en bachelor in de wiskunde:**\nOm je voorkennis bij te spijkeren kan je gebruik maken van het materiaal op [https://set.kuleuven.be/voorkennis/zomercursus/zomercursusB](https://set.kuleuven.be/voorkennis/zomercursus/zomercursusB)\nVoor verdere begeleiding bij je vakken kan je via Toledo een afspraak maken met de studiebegeleider van elk vak.\n",
+        "key": "wyxl5wmbdmm",
+        "visible": true
+      }
+    ],
+    "visible": true
+  }
+]

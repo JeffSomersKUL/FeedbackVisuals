@@ -1,0 +1,551 @@
+{
+    "answers": [
+        {
+            "questionId": 1,
+            "givenAnswer": "C",
+            "correctAnswer": "C",
+            "allAnswers": {
+                "A": 16,
+                "B": 126,
+                "C": 236,
+                "D": 17,
+                "X": 26
+            },
+            "percentageCorrect": 56.057007125890735
+        },
+        {
+            "questionId": 2,
+            "givenAnswer": "B",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 289,
+                "B": 19,
+                "C": 13,
+                "D": 22,
+                "X": 78
+            },
+            "percentageCorrect": 68.64608076009502
+        },
+        {
+            "questionId": 3,
+            "givenAnswer": "D",
+            "correctAnswer": "D",
+            "allAnswers": {
+                "A": 10,
+                "B": 9,
+                "C": 19,
+                "D": 352,
+                "X": 31
+            },
+            "percentageCorrect": 83.6104513064133
+        },
+        {
+            "questionId": 4,
+            "givenAnswer": "D",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 344,
+                "B": 30,
+                "C": 5,
+                "D": 26,
+                "X": 16
+            },
+            "percentageCorrect": 81.71021377672209
+        },
+        {
+            "questionId": 5,
+            "givenAnswer": "D",
+            "correctAnswer": "D",
+            "allAnswers": {
+                "A": 8,
+                "B": 14,
+                "C": 17,
+                "D": 255,
+                "X": 127
+            },
+            "percentageCorrect": 60.57007125890736
+        },
+        {
+            "questionId": 6,
+            "givenAnswer": "A",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 390,
+                "B": 11,
+                "C": 15,
+                "D": 5,
+                "X": 0
+            },
+            "percentageCorrect": 92.63657957244655
+        },
+        {
+            "questionId": 7,
+            "givenAnswer": "A",
+            "correctAnswer": "C",
+            "allAnswers": {
+                "A": 25,
+                "B": 38,
+                "C": 303,
+                "D": 27,
+                "X": 28
+            },
+            "percentageCorrect": 71.97149643705463
+        },
+        {
+            "questionId": 8,
+            "givenAnswer": "C",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 158,
+                "B": 29,
+                "C": 190,
+                "D": 19,
+                "X": 25
+            },
+            "percentageCorrect": 37.52969121140143
+        },
+        {
+            "questionId": 9,
+            "givenAnswer": "D",
+            "correctAnswer": "D",
+            "allAnswers": {
+                "A": 11,
+                "B": 1,
+                "C": 5,
+                "D": 403,
+                "X": 1
+            },
+            "percentageCorrect": 95.72446555819478
+        },
+        {
+            "questionId": 10,
+            "givenAnswer": "C",
+            "correctAnswer": "B",
+            "allAnswers": {
+                "A": 41,
+                "B": 218,
+                "C": 36,
+                "D": 62,
+                "X": 64
+            },
+            "percentageCorrect": 51.78147268408551
+        },
+        {
+            "questionId": 11,
+            "givenAnswer": "C",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 114,
+                "B": 30,
+                "C": 42,
+                "D": 10,
+                "X": 225
+            },
+            "percentageCorrect": 27.078384798099762
+        },
+        {
+            "questionId": 12,
+            "givenAnswer": "C",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 113,
+                "B": 24,
+                "C": 28,
+                "D": 23,
+                "X": 233
+            },
+            "percentageCorrect": 26.840855106888363
+        },
+        {
+            "questionId": 13,
+            "givenAnswer": "C",
+            "correctAnswer": "C",
+            "allAnswers": {
+                "A": 1,
+                "B": 18,
+                "C": 306,
+                "D": 9,
+                "X": 87
+            },
+            "percentageCorrect": 72.68408551068883
+        },
+        {
+            "questionId": 14,
+            "givenAnswer": "D",
+            "correctAnswer": "D",
+            "allAnswers": {
+                "A": 25,
+                "B": 16,
+                "C": 71,
+                "D": 294,
+                "X": 15
+            },
+            "percentageCorrect": 69.83372921615202
+        },
+        {
+            "questionId": 15,
+            "givenAnswer": "B",
+            "correctAnswer": "B",
+            "allAnswers": {
+                "A": 13,
+                "B": 156,
+                "C": 23,
+                "D": 93,
+                "X": 136
+            },
+            "percentageCorrect": 37.05463182897862
+        },
+        {
+            "questionId": 16,
+            "givenAnswer": "A",
+            "correctAnswer": "B",
+            "allAnswers": {
+                "A": 69,
+                "B": 193,
+                "C": 52,
+                "D": 13,
+                "X": 94
+            },
+            "percentageCorrect": 45.843230403800476
+        },
+        {
+            "questionId": 17,
+            "givenAnswer": "B",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 122,
+                "B": 30,
+                "C": 6,
+                "D": 11,
+                "X": 252
+            },
+            "percentageCorrect": 28.978622327790973
+        },
+        {
+            "questionId": 18,
+            "givenAnswer": "D",
+            "correctAnswer": "D",
+            "allAnswers": {
+                "A": 1,
+                "B": 3,
+                "C": 10,
+                "D": 405,
+                "X": 2
+            },
+            "percentageCorrect": 96.19952494061758
+        },
+        {
+            "questionId": 19,
+            "givenAnswer": "C",
+            "correctAnswer": "C",
+            "allAnswers": {
+                "A": 23,
+                "B": 45,
+                "C": 244,
+                "D": 17,
+                "X": 92
+            },
+            "percentageCorrect": 57.957244655581945
+        },
+        {
+            "questionId": 20,
+            "givenAnswer": "D",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 315,
+                "B": 15,
+                "C": 10,
+                "D": 35,
+                "X": 46
+            },
+            "percentageCorrect": 74.82185273159145
+        },
+        {
+            "questionId": 21,
+            "givenAnswer": "C",
+            "correctAnswer": "B",
+            "allAnswers": {
+                "A": 15,
+                "B": 152,
+                "C": 20,
+                "D": 9,
+                "X": 225
+            },
+            "percentageCorrect": 36.104513064133016
+        },
+        {
+            "questionId": 22,
+            "givenAnswer": "B",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 227,
+                "B": 56,
+                "C": 51,
+                "D": 44,
+                "X": 43
+            },
+            "percentageCorrect": 53.919239904988125
+        },
+        {
+            "questionId": 23,
+            "givenAnswer": "A",
+            "correctAnswer": "D",
+            "allAnswers": {
+                "A": 33,
+                "B": 44,
+                "C": 49,
+                "D": 160,
+                "X": 135
+            },
+            "percentageCorrect": 38.00475059382423
+        },
+        {
+            "questionId": 24,
+            "givenAnswer": "B",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 149,
+                "B": 57,
+                "C": 32,
+                "D": 36,
+                "X": 147
+            },
+            "percentageCorrect": 35.39192399049881
+        },
+        {
+            "questionId": 25,
+            "givenAnswer": "B",
+            "correctAnswer": "D",
+            "allAnswers": {
+                "A": 16,
+                "B": 130,
+                "C": 69,
+                "D": 166,
+                "X": 40
+            },
+            "percentageCorrect": 39.42992874109264
+        },
+        {
+            "questionId": 26,
+            "givenAnswer": "B",
+            "correctAnswer": "B",
+            "allAnswers": {
+                "A": 59,
+                "B": 165,
+                "C": 20,
+                "D": 79,
+                "X": 98
+            },
+            "percentageCorrect": 39.19239904988124
+        },
+        {
+            "questionId": 27,
+            "givenAnswer": "A",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 142,
+                "B": 58,
+                "C": 29,
+                "D": 23,
+                "X": 169
+            },
+            "percentageCorrect": 33.729216152019
+        },
+        {
+            "questionId": 28,
+            "givenAnswer": "D",
+            "correctAnswer": "C",
+            "allAnswers": {
+                "A": 29,
+                "B": 14,
+                "C": 183,
+                "D": 40,
+                "X": 155
+            },
+            "percentageCorrect": 43.46793349168646
+        },
+        {
+            "questionId": 29,
+            "givenAnswer": "C",
+            "correctAnswer": "A",
+            "allAnswers": {
+                "A": 154,
+                "B": 27,
+                "C": 9,
+                "D": 29,
+                "X": 202
+            },
+            "percentageCorrect": 36.57957244655582
+        },
+        {
+            "questionId": 30,
+            "givenAnswer": "B",
+            "correctAnswer": "B",
+            "allAnswers": {
+                "A": 51,
+                "B": 254,
+                "C": 10,
+                "D": 17,
+                "X": 89
+            },
+            "percentageCorrect": 60.33254156769596
+        }
+    ],
+    "ijkingstoetsInfo": {
+        "name": "burgelijk ingenieur",
+        "studyProgram": "burgerlijk ingenieur of burgerlijk ingenieur-architect",
+        "group": 3,
+        "date": "18 september 2017"
+    },
+    "ijkingstoetsScore": {
+        "score": 5,
+        "numberCorrect": 13,
+        "numberWrong": 17,
+        "numberBlanco": 0,
+        "numberTotal": 30
+    },
+    "ijkingstoetsPeerScore": {
+        "lowLabel": "< 10",
+        "middleLabel": ">= 10 en < 14",
+        "highLabel": "> 14",
+        "amountLow": 203,
+        "amountMiddle": 153,
+        "amountHigh": 65,
+        "studentGroup": "laag"
+    },
+    "ijkingstoetsCSEPrediction": {
+        "lowToTopPct": 10,
+        "lowToMiddlePct": 45,
+        "lowToBottomPct": 44,
+        "middleToTopPct": 33,
+        "middleToMiddlePct": 39,
+        "middleToBottomPct": 27,
+        "highToTopPct": 63,
+        "highToMiddlePct": 25,
+        "highToBottomPct": 12
+    },
+    "feedbackLink": 0,
+    "klassenRaadAdvice": "positief",
+    "klassenRaadAdvicePeer": {
+        "amountUnknown": 26,
+        "amountNegative": 18,
+        "amountNeutral": 93,
+        "amountPositive": 237,
+        "studentGroup": "positief"
+    },
+    "klassenRaadCSEPrediction": {
+        "unknownToTopPct": 17,
+        "unknownToMiddlePct": 38,
+        "unknownToBottomPct": 45,
+        "negativeToTopPct": 15,
+        "negativeToMiddlePct": 30,
+        "negativeToBottomPct": 55,
+        "neutralToTopPct": 15,
+        "neutralToMiddlePct": 45,
+        "neutralToBottomPct": 39,
+        "positiveToTopPct": 48,
+        "positiveToMiddlePct": 34,
+        "positiveToBottomPct": 17
+    },
+    "mathPercentageGroup": "80-85%",
+    "mathPeerScore": {
+        "lowLabel": "minder dan 70%",
+        "middleLabel": "70-80%",
+        "highLabel": "meer dan 80%",
+        "amountLow": 80,
+        "amountMiddle": 152,
+        "amountHigh": 137,
+        "studentGroup": "hoog"
+    },
+    "mathCSEPrediction": {
+        "lowToTopPct": 19,
+        "lowToMiddlePct": 33,
+        "lowToBottomPct": 48,
+        "middleToTopPct": 34,
+        "middleToMiddlePct": 40,
+        "middleToBottomPct": 26,
+        "highToTopPct": 55,
+        "highToMiddlePct": 35,
+        "highToBottomPct": 11
+    },
+    "concentrationPercentageGroup": "gemiddeld",
+    "concentrationPeerScore": {
+        "amountVeryWeak": 16,
+        "amountWeak": 37,
+        "amountMean": 87,
+        "amountGood": 112,
+        "amountVeryGood": 100,
+        "studentGroup": "gemiddeld"
+    },
+    "concentrationCSEPrediction": {
+        "veryWeakToTopPct": 0,
+        "veryWeakToMiddlePct": 40,
+        "veryWeakToBottomPct": 60,
+        "weakToTopPct": 35,
+        "weakToMiddlePct": 35,
+        "weakToBottomPct": 30,
+        "meanToTopPct": 35,
+        "meanToMiddlePct": 34,
+        "meanToBottomPct": 31,
+        "goodToTopPct": 37,
+        "goodToMiddlePct": 42,
+        "goodToBottomPct": 21,
+        "veryGoodToTopPct": 43,
+        "veryGoodToMiddlePct": 34,
+        "veryGoodToBottomPct": 23
+    },
+    "motivationPercentageGroup": "BLANK",
+    "motivationPeerScore": {
+        "amountVeryWeak": 26,
+        "amountWeak": 53,
+        "amountMean": 97,
+        "amountGood": 101,
+        "amountVeryGood": 67,
+        "studentGroup": "BLANK"
+    },
+    "motivationCSEPrediction": {
+        "veryWeakToTopPct": 31,
+        "veryWeakToMiddlePct": 25,
+        "veryWeakToBottomPct": 44,
+        "weakToTopPct": 23,
+        "weakToMiddlePct": 49,
+        "weakToBottomPct": 28,
+        "meanToTopPct": 34,
+        "meanToMiddlePct": 37,
+        "meanToBottomPct": 29,
+        "goodToTopPct": 42,
+        "goodToMiddlePct": 38,
+        "goodToBottomPct": 20,
+        "veryGoodToTopPct": 46,
+        "veryGoodToMiddlePct": 31,
+        "veryGoodToBottomPct": 23
+    },
+    "timeManagementPercentageGroup": "gemiddeld",
+    "timeManagementPeerScore": {
+        "amountVeryWeak": 33,
+        "amountWeak": 75,
+        "amountMean": 96,
+        "amountGood": 99,
+        "amountVeryGood": 45,
+        "studentGroup": "gemiddeld"
+    },
+    "timeManagementCSEPrediction": {
+        "veryWeakToTopPct": 24,
+        "veryWeakToMiddlePct": 40,
+        "veryWeakToBottomPct": 36,
+        "weakToTopPct": 36,
+        "weakToMiddlePct": 36,
+        "weakToBottomPct": 28,
+        "meanToTopPct": 39,
+        "meanToMiddlePct": 35,
+        "meanToBottomPct": 26,
+        "goodToTopPct": 38,
+        "goodToMiddlePct": 40,
+        "goodToBottomPct": 22,
+        "veryGoodToTopPct": 45,
+        "veryGoodToMiddlePct": 34,
+        "veryGoodToBottomPct": 21
+    },
+    "canEdit": true,
+    "feedbackCode": "10ire2039f11a9"
+}

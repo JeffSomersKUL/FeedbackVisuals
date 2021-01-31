@@ -1,0 +1,28 @@
+version: '3.7'
+services:  
+  editor:
+    build:
+      context: .
+      dockerfile: Dockerfile-Editor
+    container_name: editor
+    restart: always
+    environment:
+      - RESETTER=password
+    volumes:
+      - ./volume/persist:/usr/src/app/persist
+      - ./volume/logs:/usr/src/app/logs
+  reader:
+    build:
+      context: .
+      dockerfile: Dockerfile-Reader
+    container_name: reader
+    depends_on:
+      - editor
+    environment:
+      - PROXY_PATH=http://editor:5000
+      - RESETTER=password
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./volume/persist:/usr/src/app/persist:ro
+      - ./volume/logs:/usr/src/app/logs

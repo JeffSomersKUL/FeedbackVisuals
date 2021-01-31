@@ -1,0 +1,23 @@
+FROM node:12.10-alpine as server-builder
+WORKDIR /usr/src
+COPY server/package*.json ./server/
+RUN cd server && npm install
+COPY frontend ./frontend/
+COPY server ./server/
+RUN cd server && npm run build
+
+FROM node:12.10-alpine
+WORKDIR /usr/src/app
+RUN apk add git openssh-client ca-certificates && mkdir /root/.ssh && chmod 700 /root/.ssh && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+COPY server/package*.json ./
+RUN npm install --unsafe-perm --only=production
+COPY --from=server-builder /usr/src/server/dist ./dist
+COPY deploy_key /root/.ssh/id_rsa
+RUN chmod 600 /root/.ssh/id_rsa 
+RUN git config --global user.email "feedback@dashboard.ijkingstoets" && git config --global user.name "Feedbackdashboard ijkingstoets"
+ENV IS_EDITOR true
+ENV NODE_ENV production
+ENV PORT 5000
+EXPOSE 5000
+COPY editor_entrypoint.sh ./editor_entrypoint.sh
+ENTRYPOINT [ "./editor_entrypoint.sh" ]

@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Inleiding",
+    "subSteps": [
+      {
+        "title": "Inleiding",
+        "mdString": "Hartelijk dank voor je deelname aan de interuniversitaire ijkingstoets wetenschappen. Bij de ijkingstoets heb je 35 oefeningen opgelost die peilden naar je voorkennis voor de richtingen biochemie & biotechnologie, biologie, chemie, geografie of geologie. \n\nVia dit platform krijg je persoonlijke feedback:\n- De eerste sectie toont je globale resultaten op de ijkingstoets.\n- De tweede sectie toont je resultaat op het deel Wiskunde: Basis.\n- De derde sectie toont je resultaat op het deel Wiskunde: Standaard.\n- De vierde sectie toont je resultaat op het deel Chemie.\n",
+        "key": "dfzee99zle",
+        "visible": true
+      },
+      {
+        "title": "Feedbackcode",
+        "mdString": "###### Feedback code\n@FeedbackCode\n",
+        "key": "hr0qjke5ffe",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Ijkingstoets",
+    "subSteps": [
+      {
+        "title": "Totaalscore",
+        "mdString": "###### Totaalscore\nBEGIN0[als @aantalJuist(wiskunde_basis) < 7]\nJe score op basiswiskunde was te laag. Bij dit onderdeel beantwoordde je <<<@aantalJuist(wiskunde_basis) vraag/vragen>>> juist, <<<@aantalFout(wiskunde_basis) vraag/vragen>>> fout en liet je <<<@aantalBlanco(wiskunde_basis) vraag/vragen>>> open.\nEINDE0\nBEGIN0[als @aantalJuist(wiskunde_basis) >= 7]\nJe score op basiswiskunde was in orde. Bij dit onderdeel beantwoordde je <<<@aantalJuist(wiskunde_basis) vraag/vragen>>> juist, <<<@aantalFout(wiskunde_basis) vraag/vragen>>> fout en liet je <<<@aantalBlanco(wiskunde_basis) vraag/vragen>>> open.\nEINDE0\nHet diagram toont dat je een score van **@score(zonder_basis) op @maxScore(zonder_basis)** haalde op de andere delen (deel Wiskunde: Standaard en deel Chemie) van de ijkingstoets.\nJe beantwoordde <<<@aantalJuist(zonder_basis) vraag/vragen>>> juist, <<<@aantalFout(zonder_basis) vraag/vragen>>> fout en liet <<<@aantalBlanco(zonder_basis) vraag/vragen>>> open.\n@ScoreDonut(zonder_basis)\n\nBEGIN0[als @geslaagd = true en @aantalJuist(wiskunde_basis) >= 7]\nProficiat, je bent geslaagd voor de ijkingstoets! Aan de Faculteit Wetenschappen van de KU Leuven zijn we ervan overtuigd dat je voldoende wetenschappelijke kennis en vaardigheden hebt om te starten aan een opleiding biochemie & biotechnologie, biologie, chemie, geografie of geologie.\nEINDE0\n\nBEGIN0[als @geslaagd = false en @aantalJuist(wiskunde_basis) >= 7]\nJe behaalde een voldoende hoge score op basiswiskunde, maar je bent niet geslaagd op de andere delen van de toets. Wat nu? De ijkingstoets is uiteraard slechts een momentopname van jouw kennen en kunnen. \nAls je om diverse redenen niet voluit hebt kunnen deelnemen aan de ijkingstoets of als je maar net onder de helft scoorde, adviseren we je om je wiskunde- en/of chemiekennis en vaardigheden bij te spijkeren. Je kan deze leerstof zelfstandig opfrissen of gebruik maken van de begeleiding van de universiteit. Zie hiervoor het tabblad Begeleiding.\nUit onderzoek blijkt dat vroegere deelnemers die wel op volle capaciteit hadden gepresteerd tijdens de ijkingstoets en toch een lage ijkingstoetsscore haalden, het vaak in de opleiding ook moeilijk hebben. Als jij in deze situatie zit, is het zeker nuttig om gebruik te maken van de begeleiding.\nEINDE0\n\nBEGIN0[als @geslaagd = false en @aantalJuist(wiskunde_basis) < 7]\nJe score op basiswiskunde was te laag en je bent niet geslaagd op de andere delen van de toets. Wat nu? Uit onderzoek blijkt dat vroegere deelnemers die op volle capaciteit hadden gepresteerd tijdens de ijkingstoets en toch een zeer lage ijkingstoetsscore haalden, vaak nadien in de opleiding ook zwakke resultaten haalden. Als jij in die situatie zit, raden we je zeker aan gebruik te maken van de studiebegeleiding die wij aan de universiteit aanbieden. Zie hiervoor het tabblad Begeleiding.\nHet is belangrijk dat je dit zo snel mogelijk doet.\nEINDE0\n\nBEGIN0[als @geslaagd = true en @aantalJuist(wiskunde_basis) < 7]\nJe score op basiswiskunde was te laag maar je bent wel geslaagd op de andere delen van de toets. Wat nu? We raden je aan om de basisvragen opnieuw op te lossen. We verwachten dat je minstens 7 van deze vragen correct kan beantwoorden. \nAls dat niet lukt, raden we je aan je basiswiskundevaardigheden zo snel mogelijk bij te spijkeren. Je kan dit zelfstandig doen of gebruik maken van het aanbod van de universiteit. Zie hiervoor het tabblad Begeleiding.\nEINDE0\n\nHieronder zie je een histogram met de verdeling van de scores op 20 van alle deelnemers (score bepaald op basis van deel Wiskunde: Standaard en deel Chemie).\n\n@PuntenHistogram(zonder_basis)",
+        "key": "dfzea05fee",
+        "visible": true
+      },
+      {
+        "title": "Globale Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers (score op @maxScore(zonder_basis) bepaald op basis van deel Wiskunde: Standaard en deel Chemie).\nJe bevindt je in de groep: @scoreGroep(zonder_basis)\n@PuntenBar(zonder_basis)",
+        "key": "vhegkaljqae",
+        "visible": true
+      },
+      {
+        "title": "Advies",
+        "mdString": "###### Advies\nHier komt advies aan de hand van de eindscore\nBEGIN0[als @score(totaal) >= 14]\nDeze tekst komt er voor studenten met een eindscore van minstens 14\nEINDE0\n\nBEGIN0[als @score(totaal) < 14 en @score(totaal) >= 10]\nDeze tekst komt er voor studenten met een eindscore groter of gelijk aan 10 en kleiner dan 14\nEINDE0\n\nBEGIN0[als @score(totaal) < 10]\nDeze tekst komt er voor studenten met een eindscore kleiner dan 10\nEINDE0",
+        "key": "6soxdxdrtf9",
+        "visible": false
+      },
+      {
+        "title": "Vragen",
+        "mdString": "###### Wiskundevragen\n@OefeningenTabel(wiskunde)",
+        "key": "jy38i0z3gas",
+        "visible": false
+      },
+      {
+        "title": "Wiskunde advies",
+        "mdString": "###### Advies\nHier komt advies aan de hand van de wiskundescore\nBEGIN0[als @score(wiskunde) >= 14]\nDeze tekst komt er voor studenten met een wiskundescore van minstens 14\nEINDE0\n\nBEGIN0[als @score(wiskunde) < 14 en @score(wiskunde) >= 10]\nDeze tekst komt er voor studenten met een wiskundescore groter of gelijk aan 10 en kleiner dan 14\nEINDE0\n\nBEGIN0[als @score(wiskunde) < 10]\nDeze tekst komt er voor studenten met een wiskundescore kleiner dan 10\nEINDE0",
+        "key": "qipvzbvfxxb",
+        "visible": false
+      },
+      {
+        "title": "Chemiescore",
+        "mdString": "###### Chemiescore\nJe chemiescore is @score(chemie) op @maxScore(chemie). De grafiek hieronder toont de verdeling van de vragen volgens 'Juist', 'Fout' en 'Blanco'.\n@ScoreDonut(chemie)\n\n###### Advies\nHier komt advies aan de hand van de chemiescore\nBEGIN0[als @score(chemie) >= 7]\nDeze tekst komt er voor studenten met een chemiescore van minstens 7\nEINDE0\n\nBEGIN0[als @score(chemie) < 14 en @score(chemie) >= 10]\nDeze tekst komt er voor studenten met een chemiescore groter of gelijk aan 10 en kleiner dan 14\nEINDE0\n\nBEGIN0[als @score(chemie) < 10]\nDeze tekst komt er voor studenten met een chemiescore kleiner dan 10\nEINDE0",
+        "key": "dc7s65hib9b",
+        "visible": false
+      },
+      {
+        "title": "Basisvaardighedenscore",
+        "mdString": "###### Basisvaardigheden\nJe basisvaardighedenscore is @score(basisvaardigheden) op @maxScore(basisvaardigheden). De grafiek hieronder toont de verdeling van de vragen volgens 'Juist', 'Fout' en 'Blanco'.\n@ScoreDonut(basisvaardigheden)\n\n###### Advies\nHier komt advies aan de hand van de basisvaardighedenscore\nBEGIN0[als @score(basisvaardigheden) >= 7]\nDeze tekst komt er voor studenten met een basisvaardighedenscore van minstens 7\nEINDE0\n\nBEGIN0[als @score(basisvaardigheden) < 14 en @score(basisvaardigheden) >= 10]\nDeze tekst komt er voor studenten met een basisvaardighedenscore groter of gelijk aan 10 en kleiner dan 14\nEINDE0\n\nBEGIN0[als @score(basisvaardigheden) < 10]\nDeze tekst komt er voor studenten met een basisvaardighedenscore kleiner dan 10\nEINDE0",
+        "key": "62qpzr6e0cy",
+        "visible": false
+      },
+      {
+        "title": "Resultaten per vraag",
+        "mdString": "###### Resultaat per vraag\nWiskundevragen:\n@OefeningenMap2(wiskunde)\nChemievragen:\n@OefeningenMap2(chemie)\nBasisvaardighedenvragen:\n@OefeningenMap2(basisvaardigheden)\nAlle vragen:\n@OefeningenMap2(totaal)\n\nWiskundevragen:\n@OefeningenMap(wiskunde)\nChemievragen:\n@OefeningenMap(chemie)\nBasisvaardighedenvragen:\n@OefeningenMap(basisvaardigheden)\nAlle Vragen:\n@OefeningenMap(totaal)",
+        "key": "fqghtrh1djj",
+        "visible": false
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Deel Wiskunde: Basis",
+    "subSteps": [
+      {
+        "title": "Score",
+        "mdString": "###### Deel Wiskunde: Basis\nHet diagram toont dat je een score van **@score(wiskunde_basis) op @maxScore(wiskunde_basis)** haalde op het deel Wiskunde: Basis.\nJe beantwoordde <<<@aantalJuist(wiskunde_basis) vraag/vragen>>> juist, <<<@aantalFout(wiskunde_basis) vraag/vragen>>> fout en liet <<<@aantalBlanco(wiskunde_basis) vraag/vragen>>> open.\n@ScoreDonut(wiskunde_basis)\n\nBEGIN0[als @aantalJuist(wiskunde_basis) < 7]\nDit onderdeel van de toets peilt naar je wiskundige basisvaardigheden. We verwachten dat dit parate kennis is voor studenten die willen starten met een opleiding biochemie & biotechnologie, biologie, chemie, geografie of geologie.\nAangezien je voor dit onderdeel minder dan 7 vragen correct beantwoord hebt, is je parate kennis op dit moment ontoereikend.\nEINDE0\nBEGIN0[als @aantalJuist(wiskunde_basis) >= 7]\nDit onderdeel van de toets peilt naar je wiskundige basisvaardigheden. We verwachten dat dit parate kennis is voor studenten die willen starten met een opleiding biochemie & biotechnologie, biologie, chemie, geografie of geologie.\nJe beantwoordde voor dit onderdeel minstens 7 vragen correct, je basiskennis is dus in orde. Kijk naar je score op de andere onderdelen om te bepalen of je voldoende voorbereid bent om aan de opleiding van je keuze te beginnen.\nEINDE0",
+        "key": "8cl7g0wrdc9",
+        "visible": true
+      },
+      {
+        "title": "Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers voor het basiswiskundegedeelte.\nJe bevindt je in de groep: @scoreGroep(wiskunde_basis)\n@PuntenBar(wiskunde_basis)",
+        "key": "6lgyubic2dc",
+        "visible": false
+      },
+      {
+        "title": "Resultaat Per Vraag",
+        "mdString": "###### Resultaat per vraag\nDeze sectie toont per basiswiskundevraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. \nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(wiskunde_basis)",
+        "key": "da8rtqtx1bq",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Deel Wiskunde: Standaard",
+    "subSteps": [
+      {
+        "title": "Score",
+        "mdString": "###### Deel Wiskunde: Standaard\nHet diagram toont dat je een score van **@score(wiskunde_standaard) op @maxScore(wiskunde_standaard)** haalde op het deel Wiskunde: Standaard. Dit onderdeel bestaat uit vragen van het niveau dat standaard verwacht wordt voor een opleiding biochemie & biotechnologie, biologie, chemie, geografie of geologie.\nJe beantwoordde <<<@aantalJuist(wiskunde_standaard) vraag/vragen>>> juist, <<<@aantalFout(wiskunde_standaard) vraag/vragen>>> fout en liet <<<@aantalBlanco(wiskunde_standaard) vraag/vragen>>> open.\n@ScoreDonut(wiskunde_standaard)",
+        "key": "k3srw7yw6",
+        "visible": true
+      },
+      {
+        "title": "Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers voor het deel Wiskunde: Standaard (score wordt gegeven op @maxScore(wiskunde_standaard)).\nJe bevindt je in de groep: @scoreGroep(wiskunde_standaard)\n@PuntenBar(wiskunde_standaard)",
+        "key": "9a4mh5kpuko",
+        "visible": true
+      },
+      {
+        "title": "Resultaat per vraag",
+        "mdString": "###### Resultaat per vraag\nDeze sectie toont per wiskundevraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. \nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(wiskunde_standaard)",
+        "key": "phhwmkr2omn",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Deel Chemie",
+    "subSteps": [
+      {
+        "title": "Score",
+        "mdString": "###### Chemie\nHet diagram toont dat je een score van **@score(chemie) op @maxScore(chemie)** haalde op het deel Chemie.\nJe beantwoordde <<<@aantalJuist(chemie) vraag/vragen>>> juist, <<<@aantalFout(chemie) vraag/vragen>>> fout en liet <<<@aantalBlanco(chemie) vraag/vragen>>> open.\n@ScoreDonut(chemie)",
+        "key": "t6syvg31mg",
+        "visible": true
+      },
+      {
+        "title": "Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers voor het deel Chemie (score wordt gegeven op @maxScore(chemie)).\nJe bevindt je in de groep: @scoreGroep(chemie)\n@PuntenBar(chemie)",
+        "key": "n21pvaw7aq",
+        "visible": true
+      },
+      {
+        "title": "Resultaat per vraag",
+        "mdString": "###### Resultaat per vraag\nDeze sectie toont per chemievraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. \nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(chemie)",
+        "key": "ff5pkgvy3fg",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Basisvaardigheden",
+    "subSteps": [
+      {
+        "title": "Score",
+        "mdString": "###### Basisvaardigheden\nHet diagram toont dat je een score van **@score(basisvaardigheden) op @maxScore(basisvaardigheden)** haalde op de ijkingstoets.\nJe beantwoordde @aantalJuist(basisvaardigheden) vragen juist, @aantalFout(basisvaardigheden) vragen fout en liet @aantalBlanco(basisvaardigheden) vragen open.\n@ScoreDonut(basisvaardigheden)",
+        "key": "70rt8lit1q",
+        "visible": true
+      },
+      {
+        "title": "Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers voor het basisvaardighedengedeelte.\nJe bevindt je in de groep: @scoreGroep(basisvaardigheden)\n@PuntenBar(basisvaardigheden)",
+        "key": "oe4t7ut7q7",
+        "visible": true
+      },
+      {
+        "title": "Resultaat per vraag",
+        "mdString": "###### Resultaat per vraag\nDeze sectie toont per basisvaardighedenvraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. \nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(basisvaardigheden)",
+        "key": "kby1ro88d1s",
+        "visible": true
+      }
+    ],
+    "visible": false
+  },
+  {
+    "title": "Begeleiding",
+    "subSteps": [
+      {
+        "title": "Begeleiding",
+        "mdString": "###### Begeleiding\n\nAls je niet geslaagd bent op het deel wiskunde van de ijkingstoets raden we je aan de drie voorkennislessen door te nemen die je kan terugvinden op de Toledopagina van het vak Wiskunde I, onder Studiebegeleiding. Ook als je geslaagd bent voor de ijkingstoets maar denkt voordeel te hebben bij een opfrissing van je voorkennis kan je deze lessen uiteraard doornemen. Deze lessen zijn een verkorte versie van de zomercursus wiskunde, maar de inhoud is specifiek gericht op de eerste hoofdstukken van Wiskunde I. Begin hier zo snel mogelijk aan, want de leerstof in Wiskunde I bouwt hier op verder. Voor verdere begeleiding van Wiskunde I kan je via Toledo een afspraak maken met studiebegeleider Annouk Van Vlierden, of ook via de [Dienst studiebegeleiding](https://wet.kuleuven.be/studenten/studiebegeleiding/index.html).\n\nAls je niet geslaagd bent op het deel chemie van de ijkingstoets raden we je aan om in de zomercursus chemie te bekijken welke onderdelen je nog eens zou moeten opfrissen. Je kan [hier](https://edge.edx.org/courses/course-v1:KULeuvenX+chemie_zomer+19-20/about) inschrijven. Maak eerst een nieuwe account aan door op de knop “Register” rechtsboven te klikken. Je krijgt dan onmiddellijk een activatiemail, waarmee je toegang krijgt tot de cursus door op de knop “Enroll now” te klikken. Ook als je geslaagd bent voor het deel chemie maar denkt voordeel te hebben bij een opfrissing van je voorkennis kan je deze lessen uiteraard doornemen.\nVoor verdere studiebegeleiding voor het vak Grondslagen van de Chemie kan je via Toledo een afspraak maken met studiebegeleider Ine Esters of ook via de [Dienst studiebegeleiding](https://wet.kuleuven.be/studenten/studiebegeleiding/index.html).\n",
+        "key": "3bthxc7dudc",
+        "visible": true
+      }
+    ],
+    "visible": true
+  }
+]

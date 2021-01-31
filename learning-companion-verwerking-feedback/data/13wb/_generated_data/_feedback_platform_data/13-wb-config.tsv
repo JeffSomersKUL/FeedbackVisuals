@@ -1,0 +1,14 @@
+key	value
+toetsCode	wb
+toetsSessie	13
+aantalVragen	40
+aantalAlternatieven	4
+totaal-maxScore	20
+wiskunde-maxScore	20
+chemie-maxScore	10
+basisvaardigheden-maxScore	10
+subScores	totaal|wiskunde|chemie|basisvaardigheden
+totaal-vragen	1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40
+wiskunde-vragen	1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20
+chemie-vragen	21|22|23|24|25|26|27|28|29|30
+basisvaardigheden-vragen	31|32|33|34|35|36|37|38|39|40

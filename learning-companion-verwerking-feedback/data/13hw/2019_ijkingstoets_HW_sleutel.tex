@@ -1,0 +1,23 @@
+\documentclass[fleqn,a4paper,11pt,twoside]{article}
+
+\input{macros_pdf}
+
+%%%%%%%%%%%%%%% JAARTAL HIER AANPASSEN! %%%%%%%%%%%%%%%
+\newcommand{\jaartal}{2019}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\groep}{HW}
+
+\rhead{\parbox{14cm}{\footnotesize\sc{Sleutel IJkingstoets \groep\ Basiskennis wiskunde \jaartal}} \hfill \includegraphics[width=2cm]{logo_ijkingstoets.jpg}}
+%\cfoot{\thepage}
+\fancyfoot{}
+
+\begin{document}
+
+\section*{Verbetersleutel \groep}
+\begin{multicols}{2}
+\input{\jaartal_key_\groep}
+\end{multicols}
+\newpage
+\section*{Oplossingen}
+\input{\jaartal_opl_\groep}
+\end{document}

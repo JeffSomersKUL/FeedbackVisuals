@@ -1,0 +1,16 @@
+scoreNaam	groepLabel	kleur	aantal
+totaal	<6	rgb(255,140,0)	16
+totaal	6-9	rgb(255,215,0)	43
+totaal	10-14	rgb(144,238,144)	96
+totaal	>14	rgb(21, 132, 21)	45
+wiskunde	<9	rgb(255,140,0)	17
+wiskunde	9-14	rgb(255,215,0)	43
+wiskunde	15-21	rgb(144,238,144)	94
+wiskunde	>=22	rgb(21, 132, 21)	46
+basis	basis	rgb(255,215,0)	200
+niet_basis	niet_basis	rgb(255,215,0)	200
+analyse	analyse	rgb(255,215,0)	200
+algebra	algebra	rgb(255,215,0)	200
+meetkunde	meetkunde	rgb(255,215,0)	200
+kansrekenen	kansrekenen	rgb(255,215,0)	200
+logica	logica	rgb(255,215,0)	200

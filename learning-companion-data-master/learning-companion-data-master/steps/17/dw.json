@@ -1,0 +1,146 @@
+[
+  {
+    "title": "Inleiding",
+    "subSteps": [
+      {
+        "title": "Inleiding",
+        "mdString": "Hartelijk dank voor je deelname aan de interuniversitaire ijkingstoets diergeneeskunde. Bij de ijkingstoets heb je 30 oefeningen opgelost die peilden naar je voorkennis. \n\nLet op, op elk van de vragen werd een giscorrectie toegepast.\n\n\nVia dit platform krijg je persoonlijk feedback:\nDe eerste sectie toont je totaalscore op de ijkingstoets.\nDe twee sectie toont je resultaten op het wiskunde-gedeelte.\nDe derde sectie toont je resultaten op het fysica-gedeelte.\nDe vierde sectie toont je resultaten op het chemie-gedeelte.",
+        "key": "dfzee99zle",
+        "visible": true
+      },
+      {
+        "title": "Feedbackcode",
+        "mdString": "###### Feedback code\n@FeedbackCode\n",
+        "key": "hr0qjke5ffe",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Ijkingstoets",
+    "subSteps": [
+      {
+        "title": "Totaalscore",
+        "mdString": "###### Totaalscore\nHet diagram toont dat je een score van **@score(totaal) op @maxScore(totaal)** haalde op de ijkingstoets. (In de berekening van deze score werden vraag 10, 15 en 21 niet opgenomen omwille van de moeilijkheidsgraad voor deze populatie; de score werd dus berekend op 27 vragen).\nJe beantwoordde @aantalJuist(totaal) vragen juist, @aantalFout(totaal) vragen fout en liet @aantalBlanco(totaal) vragen open.\n@ScoreDonut(totaal)\n\nBEGIN0[als @score(totaal) >= 10]\nProficiat, je behaalde een hoog-gemiddelde score voor de ijkingstoets! Aan de UAntwerpen en UGent zijn we ervan overtuigd dat je voldoende wetenschappelijke kennis en vaardigheden hebt om te starten aan een opleiding diergeneeskunde.\nEINDE0\nBEGIN0[als @score(totaal) >= 5 en @score(totaal) < 10]\nJe behaalde een gemiddelde score voor de ijkingtoets. Deze score geeft aan dat je goed op weg bent; echter er zijn ook hiaten in je voorkennis gedetecteerd. We adviseren je hiermee individueel of met behulp van een begeleidingstraject aan de slag te gaan, en waar nodig deze basiskennis bij te spijkeren om toch een goeie start te maken.\nEINDE0\nBEGIN0[als @score(totaal) < 5]\nJe behaalde een lage score voor de ijkingtoets. Wat nu? Je slaagkansen aan de universiteit worden door verschillende factoren bepaald. De basisvaardigheden en de basiskennis die in de ijkingstoets getest werden, geven alvast een momentopname van je academische potentieel. Het advies van de klassenraad, je eindscore op wiskunde en je totale eindscore in het secundaire onderwijs vormen samen met je toetsscore belangrijke instrumenten om te weten of je goed voorbereid bent op deze opleiding. De basiskennis wetenschappen blijkt alvast onvoldoende en dat maakt de haalbaarheid van de opleiding diergeneeskunde onwaarschijnlijk. Op basis van deze resultaten is een andere opleiding waarschijnlijk een betere optie.\n\nAls je om diverse redenen niet voluit hebt kunnen deelnemen aan de ijkingstoets of als je maar net onder de helft scoorde, adviseren we je om je wiskunde-, fysica en/of chemiekennis bij te spijkeren. Je kan deze leerstof zelfstandig opfrissen of instappen in een begeleidingstraject/zomercursus van de universiteit waar je wil inschrijven.\n\nUit onderzoek blijkt dat vroegere deelnemers die op volle capaciteit hadden gepresteerd tijdens de ijkingstoets en toch een lage ijkingstoetsscore haalden, vaak nadien in de opleiding ook zwakke resultaten haalden. Als jij in deze situatie zit, is het dan ook nuttig om jouw studiekeuze nog eens te herbekijken. \n\nHeb je twijfels over je studiekeuze, dan geven we je het advies om extra informatie in te winnen, bijvoorbeeld op een van de diensten studieadvies van de universiteiten.\n\nEINDE0",
+        "key": "dfzea05fee",
+        "visible": true
+      },
+      {
+        "title": "Globale Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers.\nJe bevindt je in de groep: @scoreGroep(totaal)\n@PuntenBar(totaal)",
+        "key": "vhegkaljqae",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Wiskunde",
+    "subSteps": [
+      {
+        "title": "Score",
+        "mdString": "###### Wiskunde\nHet diagram toont dat je een score van **@score(wiskunde) op @maxScore(wiskunde)** haalde op het wiskundegedeelte van de ijkingstoets. (In deze berekening werd vraag 10 buiten beschouwing gelaten; de score is dus berekend op 9 vragen).\nJe beantwoordde @aantalJuist(wiskunde) vragen juist, @aantalFout(wiskunde) vragen fout en liet @aantalBlanco(wiskunde) vragen open.\n@ScoreDonut(wiskunde)",
+        "key": "8cl7g0wrdc9",
+        "visible": true
+      },
+      {
+        "title": "Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers voor het wiskundegedeelte.\nJe bevindt je in de groep: @scoreGroep(wiskunde)\n@PuntenBar(wiskunde)",
+        "key": "6lgyubic2dc",
+        "visible": true
+      },
+      {
+        "title": "Resultaat Per Vraag",
+        "mdString": "###### Resultaat per vraag\nDeze sectie toont per wiskundevraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. (Ook de weggelaten vraag wordt hier getoond). \nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(wiskunde_geen_correctie)",
+        "key": "da8rtqtx1bq",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Fysica",
+    "subSteps": [
+      {
+        "title": "Score",
+        "mdString": "###### Fysica\nHet diagram toont dat je een score van **@score(fysica) op @maxScore(fysica)** haalde op het fysicagedeelte van de ijkingstoets. (In deze berekening werd vraag 15 buiten beschouwing gelaten; de score is dus berekend op 9 vragen).\nJe beantwoordde @aantalJuist(fysica) vragen juist, @aantalFout(fysica) vragen fout en liet @aantalBlanco(fysica) vragen open.\n@ScoreDonut(fysica)",
+        "key": "t6syvg31mg",
+        "visible": true
+      },
+      {
+        "title": "Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers voor het fysicagedeelte.\nJe bevindt je in de groep: @scoreGroep(fysica)\n@PuntenBar(fysica)",
+        "key": "n21pvaw7aq",
+        "visible": true
+      },
+      {
+        "title": "Resultaat per vraag",
+        "mdString": "###### Resultaat per vraag\nDeze sectie toont per fysicavraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. (Ook de weggelaten vraag wordt hier getoond).\nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(fysica_geen_correctie)",
+        "key": "ff5pkgvy3fg",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Chemie",
+    "subSteps": [
+      {
+        "title": "Score",
+        "mdString": "###### Chemie\nHet diagram toont dat je een score van **@score(chemie) op @maxScore(chemie)** haalde op het chemiegedeelte van de ijkingstoets. (In deze berekening werd vraag 21 buiten beschouwing gelaten; de score is dus berekend op 9 vragen).\nJe beantwoordde @aantalJuist(chemie) vragen juist, @aantalFout(chemie) vragen fout en liet @aantalBlanco(chemie) vragen open.\n@ScoreDonut(chemie)",
+        "key": "d5abixgl56",
+        "visible": true
+      },
+      {
+        "title": "Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers voor het chemiegedeelte.\nJe bevindt je in de groep: @scoreGroep(chemie)\n@PuntenBar(chemie)",
+        "key": "944kma8ycb5",
+        "visible": true
+      },
+      {
+        "title": "Resultaat per vraag",
+        "mdString": "###### Resultaat per vraag\nDeze sectie toont per chemievraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. (Ook de weggelaten vraag wordt hier getoond.)\nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(chemie_geen_correctie)",
+        "key": "19mfnljhitt",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Metacognitief",
+    "subSteps": [
+      {
+        "title": "Metacognitief",
+        "mdString": "###### Metacognitief\nSuccesvolle studies aan de universiteit vereisen niet alleen een goede basiskennis, maar ook de motivatie en inzet om je gedurende langere periodes intensief aan je studies te wijden en om moeilijke hindernissen te durven en willen nemen. Deze metacognitieve vaardigheden en attitudes hangen samen met een hoger studiesucces en werden getoetst aan de hand van een aparte vragenlijst. De scores worden per categorie gekoppeld aan een specifieke vaardigheid, je motivatiepeil en/of attitude. \n\nIn de volgende subsecties zie je de verschillende vaardigheden, scores en wat ze betekenen. Jouw score toont jouw inschatting van de vaardigheid op een maximum van 20. ",
+        "key": "kgxiel5wobh",
+        "visible": true
+      },
+      {
+        "title": "Positieve Vaardigheden",
+        "mdString": "###### Positieve vaardigheden\nBij onderstaande vaardigheden en attitudes hangt een hogere score samen met een hoger studiesucces.\n\n###### Verwerkingsstrategieën\nHet diagram toont dat je een score van **@score(verwerkingsstrategieen) op @maxScore(verwerkingsstrategieen)** haalde op het deel Verwerkingsstrategieën van de ijkingstoets.\n@PuntenHistogram(verwerkingsstrategieen)\nDit deel peilt naar jouw vaardigheid in de verwerking van de leerinhouden.\n\n###### Zelfcontrole\nHet diagram toont dat je een score van **@score(zelfcontrole) op @maxScore(zelfcontrole)** haalde op het deel Zelfcontrole van de ijkingstoets.\n@PuntenHistogram(zelfcontrole)\nDeze score geeft aan hoeveel zelfcontrole je hebt. Hoe goed je je concentratie kan bewaren en weerstaan aan verleidingen. \n\n###### Nieuwsgierigheid\nHet diagram toont dat je een score van **@score(nieuwsgierigheid) op @maxScore(nieuwsgierigheid)** haalde op het deel Nieuwsgierigheid van de ijkingstoets.\n@PuntenHistogram(nieuwsgierigheid)\nDeze score weerspiegelt hoe je graag je wil leren, begrijpen en intellectueel verkennen.\n\n###### Emotionele controle\nHet diagram toont dat je een score van **@score(emotionelecontrole) op @maxScore(emotionelecontrole)** haalde op het deel Emotionele controle van de ijkingstoets.\n@PuntenHistogram(emotionelecontrole)\nDeze score toont de mate waarin je effectief kan omgaan met frustraties. \n\n###### Samenwerking\nHet diagram toont dat je een score van **@score(samenwerking) op @maxScore(samenwerking)** haalde op het deel Samenwerking van de ijkingstoets.\n@PuntenHistogram(samenwerking)\nDeze score geeft aan of je in de context van samenwerking met anderen, graag wil leren, begrijpen en intellectueel verkennen.\n\n###### Extraversie\nHet diagram toont dat je een score van **@score(extraversie) op @maxScore(extraversie)** haalde op het deel Extraversie van de ijkingstoets.\n@PuntenHistogram(extraversie)\nDeze score geeft de mate aan waarmee je sociaal kan omgaan met anderen en voor je eigen mening kan opkomen.",
+        "key": "1beqx9cysog",
+        "visible": true
+      },
+      {
+        "title": "Negatieve Vaardigheden",
+        "mdString": "###### Negatieve Vaardigheden\nBij onderstaande scores heeft een hogere score net een negatief verband met studiesucces.\n\n###### Stuurloos leergedrag\nHet diagram toont dat je een score van **@score(stuurloosleergedrag) op @maxScore(stuurloosleergedrag)** haalde op het deel Stuurloos leergedrag van de ijkingstoets.\n@PuntenHistogram(stuurloosleergedrag)\nMet deze score geef jij aan in welke mate je geen controle hebt over jouw eigen leergedrag. Een hogere score hangt samen met lager studiesucces.\n\n###### Uitstel\nHet diagram toont dat je een score van **@score(uitstel) op @maxScore(uitstel)** haalde op het deel Uitstel van de ijkingstoets.\n@PuntenHistogram(uitstel)\nDeze score geeft weer hoeveel uitstelgedrag je vertoont. In hoeverre zal je de taken uitstellen die je eigenlijk moet of wil doen. Een hogere score hangt samen met lager studiesucces.\n\n###### Testangst\nHet diagram toont dat je een score van **@score(testangst) op @maxScore(testangst)** haalde op het deel Testangst van de ijkingstoets.\n@PuntenHistogram(testangst)\nDeze score geeft aan in hoeverre je een gespannen reactie vertoont tijdens, voor en na evaluatiemomenten. Een hogere score hangt samen met lager studiesucces.",
+        "key": "xwwx5xw2zif",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Begeleiding",
+    "subSteps": [
+      {
+        "title": "Begeleiding",
+        "mdString": "##### Begeleiding\n\nVerdere informatie over de feedback en de begeleidingstrajecten van de verschillende universiteiten kan je vinden op hun sites:\n###### Universiteit Antwerpen\n[Universiteit Antwerpen - monitoraat](https://www.uantwerpen.be/nl/faculteiten/faculteit-fbd/onderwijs/monitoraat/) \n[Universiteit Antwerpen - overbruggingsonderwijs](http://www.uantwerpen.be/overbruggingsonderwijs)\n[Universiteit Antwerpen - Aan de slag](https://www.uantwerpen.be/nl/onderwijs/studiekeuze/secundair-universiteit/aan-de-slag/)\n###### Universiteit Gent\n[Universiteit Gent - monitoraat](https://www.ugent.be/di/nl/voor-studenten/monitoraat/overzicht.htm (bespreking resultaat)\n[Universiteit Gent - studiekeuze](https://www.ugent.be/studiekeuze)\n[Universiteit Gent - studiebegeleiding](https://www.ugent.be/student/nl/studeren/studiebegeleiding)\n\nWe danken je voor je deelname en hopen dat de ijkingstoets je helpt bij je studiekeuze.",
+        "key": "3bthxc7dudc",
+        "visible": true
+      }
+    ],
+    "visible": true
+  }
+]

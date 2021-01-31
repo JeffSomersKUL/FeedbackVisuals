@@ -1,0 +1,133 @@
+[
+  {
+    "title": "Inleiding",
+    "subSteps": [
+      {
+        "title": "Inleiding",
+        "mdString": "Hartelijk dank voor je deelname aan de interuniversitaire ijkingstoets burgerlijk ingenieur. Bij de ijkingstoets heb je oefeningen opgelost die peilden naar je startcompetenties voor de opleiding bachelor in de ingenieurswetenschappen.\n\nVia dit platform krijg je persoonlijke feedback op je resultaat op de ijkingstoets.\n\n**Je moet het feedbackplatform tabblad per tabblad doorlopen. Druk daarvoor op de knop \"volgende\".**",
+        "key": "egrhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Feedbackcode",
+        "mdString": "###### Feedback code\n@FeedbackCode\n",
+        "key": "7khgm8rsp3y",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "IJkingstoets",
+    "subSteps": [
+      {
+        "title": "Totaalscore",
+        "mdString": "###### Jouw score\nJe behaalde een score van **@score(totaal) op @maxScore(totaal)** op de ijkingstoets.\nJe beantwoordde <<<@aantalJuist(totaal) vraag/vragen>>> juist, <<<@aantalFout(totaal) vraag/vragen>>> fout en liet <<<@aantalBlanco(totaal) vraag/vragen>>> open.\n@ScoreDonut(totaal)\n\nBEGIN0[als @geslaagd = true]\nProficiat, je bent **geslaagd** voor de ijkingstoets! \nAan de Faculteiten Ingenieurswetenschappen van de drie universiteiten zijn we ervan overtuigd dat je de basiswiskundige technieken om ingenieursvraagstukken aan te pakken onder de knie hebt. De drie deelnemende universiteiten zullen je graag ontvangen in het komende academiejaar. Elk van deze universiteiten heeft ook een begeleidingsprogramma voor nieuwe studenten, dat je op de webpagina van de universiteit kan raadplegen (zie tabblad begeleiding). Succesvolle studies aan de universiteit vereisen niet alleen goede basiswiskundige technieken om ingenieursvraagstukken op te lossen, maar ook de motivatie en inzet om je gedurende langere periodes intensief aan je studies te wijden en om moeilijke hindernissen te durven en willen nemen. De eerste inspanning die je alvast geleverd hebt, is je deelname aan de ijkingstoets: proficiat hiervoor!  Nu komt het erop aan dit verder te zetten. Je kan bijvoorbeeld al eens een kijkje nemen op de website van de universiteit waar je gaat studeren voor meer informatie over het begeleidingsaanbod (zie tabblad begeleiding).\nEINDE0\nBEGIN0[als @geslaagd = false]\nJe bent **niet geslaagd**. Wat nu? \nElk van de drie universiteiten wil je ook na de ijkingstoets verder helpen. Het resultaat van de ijkingstoets is niet bindend, dus kan je je nog steeds inschrijven voor de opleiding. \nEINDE0\n\nBEGIN0[als @geslaagd = true]\nJe bent geslaagd, maar twijfel je toch aan je studiekeuze? Dan geven we je het advies om extra informatie in te winnen, bijvoorbeeld op een van de diensten Studieadvies van de universiteiten.\nEINDE0\n\nBEGIN0[als @geslaagd = false]\nJe bent niet geslaagd en het is dan ook nuttig om jouw studiekeuze nog eens te herbekijken. Maar indien je sterk gemotiveerd bent en hard wil werken, wensen we je deze studies niet te ontraden. We willen immers geen talent voor de opleiding verloren laten gaan. Heb je twijfels over je studiekeuze, dan geven we je het advies om extra informatie in te winnen, bijvoorbeeld op een van de diensten Studieadvies van de universiteiten.\nEINDE0\n",
+        "key": "egrhjnfjzesdgsd",
+        "visible": true
+      },
+      {
+        "title": "Globale Positionering",
+        "mdString": "###### Positionering ten opzichte van andere deelnemers\nIn totaal namen @aantalDeelnemers studenten deel aan de ijkingstoets burgerlijk ingenieur die aangeboden werd aan aspirant-studenten burgerlijk ingenieur aan de VUB, KU Leuven en UGent. @aantalScoreTussen(totaal, 10,20) deelnemers zijn geslaagd. \n\nDe figuur hieronder toont de verdeling van de scores van de @aantalDeelnemers studenten. Deze figuur laat je toe om je te positioneren ten opzichte van de andere deelnemers.\n\n@PuntenHistogram(totaal)\n\nAls we alle deelnemers in drie grote groepen verdelen, bevind jij je met je score van @score(totaal)/@maxScore(totaal) in de groep: @scoreGroep(totaal)/@maxScore(totaal)\n@PuntenBar(totaal)\n\n###### Vervolgtraject voorbije edities\nHeel wat van de deelnemers aan de ijkingstoets zijn aan de opleiding bachelor in de ingenieurswetenschappen (KU Leuven, UGent, VUB) of bachelor in de ingenieurswetenschappen: architectuur (KU Leuven) gestart. Onderzoek toont dat de wiskundige voorkennis gemeten tijdens de ijkingstoets, naast je resultaten in het secundair onderwijs, het advies van de klassenraad, je leer- en studeervaardigheden en motivatie, een belangrijke factor is voor je toekomstige studiesucces. \n\nBEGIN0[als @geslaagd = true]\nJe bent geslaagd, maar twijfel je toch aan je studiekeuze? Dan geven we je het advies om extra informatie in te winnen, bijvoorbeeld op een van de diensten Studieadvies van de universiteiten.\nEINDE0\n\nBEGIN0[als @geslaagd = false]\nJe bent niet geslaagd en het is dan ook nuttig om jouw studiekeuze nog eens te herbekijken. Maar indien je sterk gemotiveerd bent en hard wil werken, wensen we je deze studies niet te ontraden. We willen immers geen talent voor de opleiding verloren laten gaan. Heb je twijfels over je studiekeuze, dan geven we je het advies om extra informatie in te winnen, bijvoorbeeld op een van de diensten Studieadvies van de universiteiten.\nEINDE0\n",
+        "key": "egrhjnsdgfvdfj",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Studieresultaten deelnemers vorig jaar\nDeze sectie toont hoe vroegere deelnemers van de ijkingstoets gepresteerd hebben tijdens de examens in januari uitgedrukt via hun cumulatieve studie-efficiëntie (CSE). De CSE komt overeen met de som van de studiepunten van de vakken waarvoor de student geslaagd is, gedeeld door de som van de studiepunten van alle vakken van de student. Elk vak in het hoger onderwijs krijgt aan aantal studiepunten toegewezen, afhankelijk van de studietijd die je er aan zal besteden. Vakken van 6 studiepunten zullen beduidend meer tijd in beslag nemen dan vakken van 3 studiepunten.\n@PuntenCSEFlow",
+        "visible": false
+      },
+      {
+        "title": "Resultaat per vraag",
+        "mdString": "###### Resultaat per vraag\nDit onderdeel toont per vraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. Je ziet eveneens het percentage van de deelnemers dat de vraag juist en blanco heeft beantwoord.\nJe kan **klikken op de rij van een vraag** voor meer details: de opgave en de antwoorden van de andere deelnemers.\n@OefeningenTabel(totaal)\n\n\n###### Alternatieve visualisatie\nOnderstaande figuur geeft je een nieuwe blik op je resultaat van de ijkingstoets.\nElk bolletje is één vraag. Het nummer in het bolletje is het vraagnummer. Groen wijst op een correct antwoord, grijs op een blanco antwoord en rood op een fout antwoord.\nDe vragen zijn geordend volgens het percentage van de studenten die de vraag juist had (x-as). \"Makkelijke\" vragen staan dus rechts, die beantwoordden veel deelnemers juist. \"Moeilijke\" vragen staan links, die beantwoordden veel deelnemers fout of lieten ze blanco.\nZo kan je in één overzicht zien of je bv. ook \"makkelijke\" vragen fout had of bv. de meeste \"moeilijke\" vragen blanco liet.\nJe kan op elk bolletje klikken voor meer detail over de vraag.\n@OefeningenMap(totaal) ",
+        "key": "egrffddgdhjnfj",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Leervaardigheden",
+    "subSteps": [
+      {
+        "title": "Concentratie",
+        "mdString": "###### Concentratie\n@DeelnameConcentratieFlow",
+        "key": "egdfefgerezzaj",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Concentratie vorige studenten vs Studieresultaten\n@ConcentratieCSEFlow",
+        "key": "zeazdfefgdhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Motivatie",
+        "mdString": "###### Motivatie\n@DeelnameMotivatieFlow",
+        "key": "45445eddfefgdhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Motivatie vorige studenten vs Studieresultaten\n@MotivatieCSEFlow",
+        "key": "egdfefazeqseqnfj",
+        "visible": true
+      },
+      {
+        "title": "Tijdsbeheer",
+        "mdString": "###### Tijdsbeheer\n@DeelnameTijdsbeheerFlow",
+        "key": "szqefgdhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Tijdsbeheer vorige studenten vs Studieresultaten\n@TijdsbeheerCSEFlow",
+        "key": "eezrzesgeddhjnfj",
+        "visible": true
+      }
+    ],
+    "visible": false
+  },
+  {
+    "title": "Secundair onderwijs",
+    "subSteps": [
+      {
+        "title": "Klassenraad",
+        "mdString": "###### Advies Klassenraad\nOp de enquête bij de ijkingstoets rapporteerde jij een @student.klassenRaadAdvies advies van de klassenraad.\nDeze sectie toont een positionering van jouw advies ten opzichte van dat van de andere deelnemers.\n@DeelnameAdviesFlow\n",
+        "key": "egdfefgdhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Advies Klassenraad vorige studenten vs Studieresultaten\nDeze sectie toont hoe vroegere deelnemers van de ijkingstoets gepresteerd hebben tijdens de examens in januari uitgedrukt via hun cumulatieve studie- efficiëntie.\n@AdviesCSEFlow",
+        "key": "egdfetregrddhjnfj",
+        "visible": true
+      },
+      {
+        "title": "Wiskunde",
+        "mdString": "###### Resultaten wiskunde secundair onderwijs\nOp de enquête bij de ijkingstoets rapporteerde jij een wiskundepercentage van @student.wiskundePercentage.\nJouw niveau van wiskunde is belangrijk bij het aanvatten van de studie. Eerst en vooral is het natuurlijk belangrijk dat je vooropleiding een voldoende sterk wiskundepakket had: onze opleiding verwacht immers minstens 6 uur wiskunde. Bijkomend is het percentage wiskunde dat je behaalde in het secundair onderwijs is een belangrijke maat voor jouw wiskundevoorkennis.\nDeze sectie toont een positionering van jouw wiskundeniveau ten opzichte van dat van de andere deelnemers.\n@DeelnameWiskundeFlow",
+        "key": "elmfewzropov",
+        "visible": true
+      },
+      {
+        "title": "Studieresultaten vorige deelnemers",
+        "mdString": "###### Resultaten wiskunde secundair onderwijs vorige studenten vs Studieresultaten\nDeze sectie toont hoe vroegere deelnemers van de ijkingstoets gepresteerd hebben tijdens de examens in januari uitgedrukt via hun cumulatieve studie-efficiëntie.\n@WiskundeCSEFlow",
+        "key": "eezzzezfgdhjnfj",
+        "visible": true
+      }
+    ],
+    "visible": false
+  },
+  {
+    "title": "Begeleiding",
+    "subSteps": [
+      {
+        "title": "Begeleiding",
+        "mdString": "Verdere informatie over de feedback en de begeleidingstrajecten van de verschillende universiteiten kan je vinden op hun webpagina's:\n[KU Leuven](https://eng.kuleuven.be/ijkingstoets#watnadeijkingstoets)\n[Universiteit Gent](http://www.ugent.be/ea/nl/onderwijs/ijkingstoets-ir-natraject.htm )\n[VUB](https://www.vub.be/ijkingstoets#na-de-ijkingstoets)\n\n\nWe danken je voor je deelname en hopen dat de ijkingstoets je helpt bij je studiekeuze.",
+        "key": "wyxl5wmbdmm",
+        "visible": true
+      }
+    ],
+    "visible": true
+  }
+]

@@ -1,0 +1,25 @@
+key	value
+toetsCode	hi
+toetsSessie	19
+aantalVragen	30
+aantalAlternatieven	4
+totaal-maxScore	20
+wiskunde-maxScore	30
+basis-maxScore	6
+niet_basis-maxScore	24
+analyse-maxScore	9
+algebra-maxScore	16
+meetkunde-maxScore	2
+kansrekenen-maxScore	2
+logica-maxScore	1
+subScores	totaal|wiskunde|basis|niet_basis|analyse|algebra|meetkunde|kansrekenen|logica
+metascores	
+totaal-vragen	1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30
+wiskunde-vragen	1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30
+basis-vragen	1|2|3|4|5|6
+niet_basis-vragen	7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30
+analyse-vragen	1|12|17|18|19|21|23|25|28
+algebra-vragen	2|3|4|6|7|9|10|14|15|16|20|22|24|27|29|30
+meetkunde-vragen	5|13
+kansrekenen-vragen	8|11
+logica-vragen	26

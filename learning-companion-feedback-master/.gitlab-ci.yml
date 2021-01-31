@@ -1,0 +1,14 @@
+image: node:10-alpine
+
+stages:
+  - test-frontend
+
+test:
+  stage: test-frontend
+  script:
+    - cd frontend
+    - npm i npm@latest -g
+    - npm i
+    - npm test
+  tags: &tags
+    - latex

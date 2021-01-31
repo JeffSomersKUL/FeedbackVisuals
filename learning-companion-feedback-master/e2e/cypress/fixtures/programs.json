@@ -1,0 +1,17 @@
+{
+    "lastSession": 10,
+    "programs": [
+        {
+            "name": "Bio-ingenieurswetenschappen (bio-ingenieur)",
+            "code": "bi"
+        },
+        {
+            "name": "Biomedische wetenschappen",
+            "code": "bw"
+        },
+        {
+            "name": "Diergeneeskunde",
+            "code": "dw"
+        }
+    ]
+}

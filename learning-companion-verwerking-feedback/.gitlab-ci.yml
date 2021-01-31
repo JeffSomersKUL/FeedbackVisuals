@@ -1,0 +1,12 @@
+# use docker image with latex preinstalled
+image: python:3.8-slim
+
+build:
+  script:
+    - pip install -r requirements.txt
+    - bash ci_process_and_generate.sh
+    - bash check_clean_git.sh
+
+  # Make sure that build job is only runned by GitLab runners tagged for latex TMP
+  tags:
+    - latex

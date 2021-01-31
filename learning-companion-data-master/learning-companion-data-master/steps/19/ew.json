@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Inleiding",
+    "subSteps": [
+      {
+        "title": "Inleiding",
+        "mdString": "\nHartelijk dank voor je deelname aan de interuniversitaire ijkingstoets (sociaal/toegepaste) economische wetenschappen. Bij de ijkingstoets heb je 30 oefeningen opgelost die peilden naar je voorkennis wiskunde voor de opleiding bachelor economische wetenschappen, toegepaste economische wetenschappen of sociaal-economische wetenschappen. \n\nDe toets bestaat uit basisvragen (vraag 1-6) en meer gevorderde vragen (vraag 7-30).\n\nVia dit platform krijg je persoonlijk feedback:\nDe eerste sectie:\n- toont het resultaat dat je behaalde op de totale ijkingstoets\n- vermeldt ook het globale resultaat dat je behaalde op de 6 basisvragen\n- geeft je een positionering van je resultaat ten opzichte van dat van de andere deelnemers aan dezelfde toets.\nDe tweede sectie:\n- geeft je meer gedetailleerde feedback per vraag,\n- per categorie\n- per inhoudelijk domein (analyse, algebra, meetkunde, kansrekenen). ",
+        "key": "dfzee99zle",
+        "visible": true
+      },
+      {
+        "title": "Feedbackcode",
+        "mdString": "###### Feedback code\n@FeedbackCode\n",
+        "key": "hr0qjke5ffe",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Totaalscore",
+    "subSteps": [
+      {
+        "title": "Totaalscore",
+        "mdString": "###### Totaalscore\nHet diagram toont dat je een score van **@score(totaal) op @maxScore(totaal)** haalde op de ijkingstoets.\nJe beantwoordde <<<@aantalJuist(totaal) vraag/vragen>>> juist, <<<@aantalFout(totaal) vraag/vragen>>> fout en liet <<<@aantalBlanco(totaal) vraag/vragen>>> open.\n@ScoreDonut(totaal)\nBEGIN0[als @aantalJuist(basis) < 4]\nJe score op basiswiskunde was te laag. Bij dit onderdeel beantwoordde je <<<@aantalJuist(basis) vraag/vragen>>> juist, <<<@aantalFout(basis) vraag/vragen>>> fout en liet je <<<@aantalBlanco(basis) vraag/vragen>>> open.\nEINDE0\nBEGIN0[als @aantalJuist(basis) >= 4]\nJe score op basiswiskunde was in orde. Bij dit onderdeel beantwoordde je <<<@aantalJuist(basis) vraag/vragen>>> juist, <<<@aantalFout(basis) vraag/vragen>>> fout en liet je <<<@aantalBlanco(basis) vraag/vragen>>> open.\nEINDE0\nBEGIN0[als @score(wiskunde) >= 22]\nJe behaalde een zeer goede score op de ijkingstoets. Je voorkennis is zeker voldoende om te starten in deze opleiding. Een goede score op de ijkingstoets is echter geen garantie op succes. Hard werken, een goede studie-aanpak en motivatie blijven heel belangrijk. Maar deze start is alvast veelbelovend!\nEINDE0\nBEGIN0[als @score(wiskunde) >= 15 en @score(wiskunde) <= 21]\nJe behaalde een goede score op de ijkingstoets. We raden je toch sterk aan om de kwantitatieve vakken niet te onderschatten, een volgehouden inspanning tijdens het academiejaar is zeker noodzakelijk. Ook een zomercursus wiskunde kan je helpen om een goede start te nemen.\nEINDE0\nBEGIN0[als @score(wiskunde) >= 9 en @score(wiskunde) <= 14]\nJe behaalde een vrij lage score op de ijkingstoets. Indien je in deze opleiding wil starten, raden we je sterk aan je kennis wiskunde zelf bij te werken en je vooruitgang te checken tijdens een opfriscursus wiskunde. Ongeacht de opleiding die je kiest, is voor de kwantitatieve vakken een volgehouden extra inspanning tijdens het academiejaar voor jou noodzakelijk.\nEINDE0\nBEGIN0[als @score(wiskunde) <= 8]\nDe score die je behaalde op de ijkingstoets is onvoldoende. Een voldoende basiskennis wiskunde is nochtans essentieel om een goede start te nemen van je universitaire studies aan onze faculteit. Indien je deze opleiding toch overweegt, is het noodzakelijk om je basiskennis grondig bij te werken. Een link naar het overzicht van de begeleidingstrajecten per universiteit vind je aan het einde van deze feedback. Maak zeker ook gebruik van de mogelijkheid om een opfriscursus wiskunde te volgen.\nEINDE0",
+        "key": "dfzea05fee",
+        "visible": true
+      },
+      {
+        "title": "Globale Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers.\nJe bevindt je in de groep: @scoreGroep(totaal)\n@PuntenBar(totaal)",
+        "key": "vhegkaljqae",
+        "visible": true
+      },
+      {
+        "title": "Advies",
+        "mdString": "###### Advies\nHier komt advies aan de hand van de eindscore\nBEGIN0[als @score(totaal) >= 14]\nDeze tekst komt er voor studenten met een eindscore van minstens 14\nEINDE0\n\nBEGIN0[als @score(totaal) < 14 en @score(totaal) >= 10]\nDeze tekst komt er voor studenten met een eindscore groter of gelijk aan 10 en kleiner dan 14\nEINDE0\n\nBEGIN0[als @score(totaal) < 10]\nDeze tekst komt er voor studenten met een eindscore kleiner dan 10\nEINDE0",
+        "key": "6soxdxdrtf9",
+        "visible": false
+      },
+      {
+        "title": "Vragen",
+        "mdString": "###### Wiskundevragen\n@OefeningenTabel(wiskunde)",
+        "key": "jy38i0z3gas",
+        "visible": false
+      },
+      {
+        "title": "Wiskunde advies",
+        "mdString": "###### Advies\nHier komt advies aan de hand van de wiskundescore\nBEGIN0[als @score(wiskunde) >= 14]\nDeze tekst komt er voor studenten met een wiskundescore van minstens 14\nEINDE0\n\nBEGIN0[als @score(wiskunde) < 14 en @score(wiskunde) >= 10]\nDeze tekst komt er voor studenten met een wiskundescore groter of gelijk aan 10 en kleiner dan 14\nEINDE0\n\nBEGIN0[als @score(wiskunde) < 10]\nDeze tekst komt er voor studenten met een wiskundescore kleiner dan 10\nEINDE0",
+        "key": "qipvzbvfxxb",
+        "visible": false
+      },
+      {
+        "title": "Chemiescore",
+        "mdString": "###### Chemiescore\nJe chemiescore is @score(chemie) op @maxScore(chemie). De grafiek hieronder toont de verdeling van de vragen volgens 'Juist', 'Fout' en 'Blanco'.\n@ScoreDonut(chemie)\n\n###### Advies\nHier komt advies aan de hand van de chemiescore\nBEGIN0[als @score(chemie) >= 7]\nDeze tekst komt er voor studenten met een chemiescore van minstens 7\nEINDE0\n\nBEGIN0[als @score(chemie) < 14 en @score(chemie) >= 10]\nDeze tekst komt er voor studenten met een chemiescore groter of gelijk aan 10 en kleiner dan 14\nEINDE0\n\nBEGIN0[als @score(chemie) < 10]\nDeze tekst komt er voor studenten met een chemiescore kleiner dan 10\nEINDE0",
+        "key": "dc7s65hib9b",
+        "visible": false
+      },
+      {
+        "title": "Basisvaardighedenscore",
+        "mdString": "###### Basisvaardigheden\nJe basisvaardighedenscore is @score(basisvaardigheden) op @maxScore(basisvaardigheden). De grafiek hieronder toont de verdeling van de vragen volgens 'Juist', 'Fout' en 'Blanco'.\n@ScoreDonut(basisvaardigheden)\n\n###### Advies\nHier komt advies aan de hand van de basisvaardighedenscore\nBEGIN0[als @score(basisvaardigheden) >= 7]\nDeze tekst komt er voor studenten met een basisvaardighedenscore van minstens 7\nEINDE0\n\nBEGIN0[als @score(basisvaardigheden) < 14 en @score(basisvaardigheden) >= 10]\nDeze tekst komt er voor studenten met een basisvaardighedenscore groter of gelijk aan 10 en kleiner dan 14\nEINDE0\n\nBEGIN0[als @score(basisvaardigheden) < 10]\nDeze tekst komt er voor studenten met een basisvaardighedenscore kleiner dan 10\nEINDE0",
+        "key": "62qpzr6e0cy",
+        "visible": false
+      },
+      {
+        "title": "Resultaten per vraag",
+        "mdString": "###### Resultaat per vraag\nWiskundevragen:\n@OefeningenMap2(wiskunde)\nChemievragen:\n@OefeningenMap2(chemie)\nBasisvaardighedenvragen:\n@OefeningenMap2(basisvaardigheden)\nAlle vragen:\n@OefeningenMap2(totaal)\n\nWiskundevragen:\n@OefeningenMap(wiskunde)\nChemievragen:\n@OefeningenMap(chemie)\nBasisvaardighedenvragen:\n@OefeningenMap(basisvaardigheden)\nAlle Vragen:\n@OefeningenMap(totaal)",
+        "key": "fqghtrh1djj",
+        "visible": false
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Resultaat Per Vraag",
+    "subSteps": [
+      {
+        "title": "Basisvragen (vraag 1-6)",
+        "mdString": "###### Basisvragen (vraag 1-6)\nDeze sectie toont per zeer eenvoudige wiskundevraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt.\nBij dit onderdeel beantwoordde je <<<@aantalJuist(basis) vraag/vragen>>> juist, <<<@aantalFout(basis) vraag/vragen>>> fout en liet je <<<@aantalBlanco(basis) vraag/vragen>>> open.\nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(basis)",
+        "key": "da8rtqtx1bq",
+        "visible": true
+      },
+      {
+        "title": "Gevorderde vragen (vraag 7-30)",
+        "mdString": "###### Gevorderde vragen (vraag 7-30)\nDeze sectie toont per wiskundevraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. \nBij dit onderdeel beantwoordde je <<<@aantalJuist(niet_basis) vraag/vragen>>> juist, <<<@aantalFout(niet_basis) vraag/vragen>>> fout en liet je <<<@aantalBlanco(niet_basis) vraag/vragen>>> open.\nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(niet_basis)",
+        "key": "8cl7g0wrdc9",
+        "visible": true
+      },
+      {
+        "title": "Analysevragen",
+        "mdString": "###### Analysevragen\nDeze sectie toont per analysevraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. \nBij dit onderdeel beantwoordde je <<<@aantalJuist(analyse) vraag/vragen>>> juist, <<<@aantalFout(analyse) vraag/vragen>>> fout en liet je <<<@aantalBlanco(analyse) vraag/vragen>>> open.\nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(analyse)",
+        "key": "6lgyubic2dc",
+        "visible": true
+      },
+      {
+        "title": "Algebravragen",
+        "mdString": "###### Algebravragen\nDeze sectie toont per algebravraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. \nBij dit onderdeel beantwoordde je <<<@aantalJuist(algebra) vraag/vragen>>> juist, <<<@aantalFout(algebra) vraag/vragen>>> fout en liet je <<<@aantalBlanco(algebra) vraag/vragen>>> open.\nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(algebra)",
+        "key": "njlhk1pkovi",
+        "visible": true
+      },
+      {
+        "title": "Meetkundevragen",
+        "mdString": "###### Meetkundevragen\nDeze sectie toont per meetkundevraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. \nBij dit onderdeel beantwoordde je <<<@aantalJuist(meetkunde) vraag/vragen>>> juist, <<<@aantalFout(meetkunde) vraag/vragen>>> fout en liet je <<<@aantalBlanco(meetkunde) vraag/vragen>>> open.\nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(meetkunde)",
+        "key": "kcxmjv9tkgd",
+        "visible": true
+      },
+      {
+        "title": "Kansrekenenvragen",
+        "mdString": "###### Kansrekenenvragen\nDeze sectie toont per kansrekenenvraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. \nBij dit onderdeel beantwoordde je <<<@aantalJuist(kansrekenen) vraag/vragen>>> juist, <<<@aantalFout(kansrekenen) vraag/vragen>>> fout en liet je <<<@aantalBlanco(kansrekenen) vraag/vragen>>> open.\nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(kansrekenen)",
+        "key": "5r4pzs4sk2i",
+        "visible": true
+      }
+    ],
+    "visible": true
+  },
+  {
+    "title": "Academisch redeneren",
+    "subSteps": [
+      {
+        "title": "Score",
+        "mdString": "###### Academisch redeneren\nHet diagram toont dat je een score van **@score(academisch-redeneren) op @maxScore(academisch-redeneren)** haalde op het gedeelte met 10 vragen over academisch redeneren.\nJe beantwoordde @aantalJuist(academisch-redeneren) vragen juist, @aantalFout(academisch-redeneren) vragen fout en liet @aantalBlanco(academisch-redeneren) vragen open.\n@ScoreDonut(academisch-redeneren)",
+        "key": "t6syvg31mg",
+        "visible": true
+      },
+      {
+        "title": "Positionering",
+        "mdString": "###### Verdeling scores deelnemers\nDeze sectie toont een positionering van jouw prestatie ten opzichte van die van de andere deelnemers voor het academisch-redenerengedeelte.\nJe bevindt je in de groep: @scoreGroep(academisch-redeneren)\n@PuntenBar(academisch-redeneren)",
+        "key": "n21pvaw7aq",
+        "visible": true
+      },
+      {
+        "title": "Resultaat per vraag",
+        "mdString": "###### Resultaat per vraag\nDeze sectie toont per academisch-redenerenvraag of je de vraag juist (groen), fout (rood) of niet ingevuld (grijs) hebt. \nJe kan klikken op de rij van een vraag voor de opgave en verdeling van de antwoorden.\n@OefeningenTabel(academisch-redeneren)",
+        "key": "ff5pkgvy3fg",
+        "visible": true
+      }
+    ],
+    "visible": false
+  },
+  {
+    "title": "Einde",
+    "subSteps": [
+      {
+        "title": "Begeleiding",
+        "mdString": "###### Einde\n\nVerdere informatie over de feedback en de begeleidingstrajecten van de verschillende universiteiten kan je vinden op hun sites:\n[KU Leuven](https://feb.kuleuven.be/toekomstigestudenten/voorbereid)\n[Universiteit Antwerpen](http://www.uantwerpen.be/overbruggingsonderwijs)\n[Universiteit Gent](https://www.ugent.be/eb/nl/toekomstige-student/ijkingstoets.htm)\n\nWe danken je voor je deelname en hopen dat de ijkingstoets je helpt bij je studiekeuze.",
+        "key": "3bthxc7dudc",
+        "visible": true
+      }
+    ],
+    "visible": true
+  }
+]

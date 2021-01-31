@@ -1,0 +1,8 @@
+version: '3.7'
+services:  
+  verwerking:
+    build: .
+    container_name: verwerking
+    restart: always
+    volumes:
+      - ./data:/usr/src/data

@@ -1,0 +1,8 @@
+server/dist
+server/node_modules
+server/persist
+server/log_parser
+frontend/dist
+frontend/node_modules
+e2e/node_modules
+volume

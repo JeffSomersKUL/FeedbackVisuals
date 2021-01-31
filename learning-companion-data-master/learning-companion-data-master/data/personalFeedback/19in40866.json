@@ -1,0 +1,776 @@
+{
+  "passed": true,
+  "questionnaire": 1,
+  "scores": [
+    {
+      "name": "totaal",
+      "score": {
+        "score": 19,
+        "maxScore": 20,
+        "hasBreakdown": true,
+        "numberCorrect": 24,
+        "numberWrong": 1,
+        "numberBlanco": 0,
+        "groupLabel": ">=14"
+      },
+      "peerScore": {
+        "parts": [
+          {
+            "label": "<10",
+            "amount": 42,
+            "color": "rgb(255,140,0)"
+          },
+          {
+            "label": "10-13",
+            "amount": 118,
+            "color": "rgb(255,215,0)"
+          },
+          {
+            "label": ">=14",
+            "amount": 438,
+            "color": "rgb(144,238,144)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "wiskunde_basis",
+      "score": {
+        "score": 10,
+        "maxScore": 10,
+        "hasBreakdown": true,
+        "numberCorrect": 10,
+        "numberWrong": 0,
+        "numberBlanco": 0,
+        "groupLabel": ">=9"
+      },
+      "peerScore": {
+        "parts": [
+          {
+            "label": "<7",
+            "amount": 33,
+            "color": "rgb(255,140,0)"
+          },
+          {
+            "label": "7-8",
+            "amount": 70,
+            "color": "rgb(255,215,0)"
+          },
+          {
+            "label": ">=9",
+            "amount": 495,
+            "color": "rgb(144,238,144)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "wiskunde_standaard",
+      "score": {
+        "score": 14,
+        "maxScore": 15,
+        "hasBreakdown": true,
+        "numberCorrect": 14,
+        "numberWrong": 1,
+        "numberBlanco": 0,
+        "groupLabel": ">=12"
+      },
+      "peerScore": {
+        "parts": [
+          {
+            "label": "<8",
+            "amount": 143,
+            "color": "rgb(255,140,0)"
+          },
+          {
+            "label": "8-11",
+            "amount": 231,
+            "color": "rgb(255,215,0)"
+          },
+          {
+            "label": ">=12",
+            "amount": 224,
+            "color": "rgb(144,238,144)"
+          }
+        ]
+      }
+    }
+  ],
+  "answers": [
+    {
+      "questionId": 1,
+      "position": 1,
+      "givenAnswer": "C",
+      "correctAnswer": "C",
+      "allAnswers": {
+        "A": 10,
+        "B": 11,
+        "C": 563,
+        "D": 4,
+        "X": 10
+      },
+      "percentageCorrect": 94,
+      "percentageBlanco": 1
+    },
+    {
+      "questionId": 2,
+      "position": 2,
+      "givenAnswer": "B",
+      "correctAnswer": "B",
+      "allAnswers": {
+        "A": 2,
+        "B": 578,
+        "C": 7,
+        "D": 10,
+        "X": 1
+      },
+      "percentageCorrect": 97,
+      "percentageBlanco": 0
+    },
+    {
+      "questionId": 3,
+      "position": 3,
+      "givenAnswer": "A",
+      "correctAnswer": "A",
+      "allAnswers": {
+        "A": 564,
+        "B": 4,
+        "C": 12,
+        "D": 14,
+        "X": 4
+      },
+      "percentageCorrect": 94,
+      "percentageBlanco": 0
+    },
+    {
+      "questionId": 4,
+      "position": 4,
+      "givenAnswer": "B",
+      "correctAnswer": "B",
+      "allAnswers": {
+        "A": 21,
+        "B": 538,
+        "C": 15,
+        "D": 22,
+        "X": 2
+      },
+      "percentageCorrect": 90,
+      "percentageBlanco": 0
+    },
+    {
+      "questionId": 5,
+      "position": 5,
+      "givenAnswer": "D",
+      "correctAnswer": "D",
+      "allAnswers": {
+        "A": 17,
+        "B": 18,
+        "C": 2,
+        "D": 557,
+        "X": 4
+      },
+      "percentageCorrect": 93,
+      "percentageBlanco": 0
+    },
+    {
+      "questionId": 6,
+      "position": 6,
+      "givenAnswer": "B",
+      "correctAnswer": "B",
+      "allAnswers": {
+        "A": 23,
+        "B": 511,
+        "C": 26,
+        "D": 22,
+        "X": 16
+      },
+      "percentageCorrect": 85,
+      "percentageBlanco": 2
+    },
+    {
+      "questionId": 7,
+      "position": 7,
+      "givenAnswer": "D",
+      "correctAnswer": "D",
+      "allAnswers": {
+        "A": 25,
+        "B": 16,
+        "C": 23,
+        "D": 517,
+        "X": 17
+      },
+      "percentageCorrect": 86,
+      "percentageBlanco": 2
+    },
+    {
+      "questionId": 8,
+      "position": 8,
+      "givenAnswer": "B",
+      "correctAnswer": "B",
+      "allAnswers": {
+        "A": 4,
+        "B": 565,
+        "C": 12,
+        "D": 4,
+        "X": 13
+      },
+      "percentageCorrect": 94,
+      "percentageBlanco": 2
+    },
+    {
+      "questionId": 9,
+      "position": 9,
+      "givenAnswer": "D",
+      "correctAnswer": "D",
+      "allAnswers": {
+        "A": 0,
+        "B": 24,
+        "C": 9,
+        "D": 564,
+        "X": 1
+      },
+      "percentageCorrect": 94,
+      "percentageBlanco": 0
+    },
+    {
+      "questionId": 10,
+      "position": 10,
+      "givenAnswer": "C",
+      "correctAnswer": "C",
+      "allAnswers": {
+        "A": 3,
+        "B": 7,
+        "C": 580,
+        "D": 3,
+        "X": 5
+      },
+      "percentageCorrect": 97,
+      "percentageBlanco": 0
+    },
+    {
+      "questionId": 11,
+      "position": 11,
+      "givenAnswer": "A",
+      "correctAnswer": "A",
+      "allAnswers": {
+        "A": 517,
+        "B": 6,
+        "C": 39,
+        "D": 23,
+        "X": 13
+      },
+      "percentageCorrect": 86,
+      "percentageBlanco": 2
+    },
+    {
+      "questionId": 12,
+      "position": 12,
+      "givenAnswer": "B",
+      "correctAnswer": "B",
+      "allAnswers": {
+        "A": 53,
+        "B": 427,
+        "C": 25,
+        "D": 13,
+        "X": 80
+      },
+      "percentageCorrect": 71,
+      "percentageBlanco": 13
+    },
+    {
+      "questionId": 13,
+      "position": 13,
+      "givenAnswer": "A",
+      "correctAnswer": "A",
+      "allAnswers": {
+        "A": 352,
+        "B": 43,
+        "C": 59,
+        "D": 29,
+        "X": 115
+      },
+      "percentageCorrect": 59,
+      "percentageBlanco": 19
+    },
+    {
+      "questionId": 14,
+      "position": 14,
+      "givenAnswer": "B",
+      "correctAnswer": "B",
+      "allAnswers": {
+        "A": 24,
+        "B": 518,
+        "C": 5,
+        "D": 34,
+        "X": 17
+      },
+      "percentageCorrect": 87,
+      "percentageBlanco": 2
+    },
+    {
+      "questionId": 15,
+      "position": 15,
+      "givenAnswer": "A",
+      "correctAnswer": "A",
+      "allAnswers": {
+        "A": 441,
+        "B": 41,
+        "C": 36,
+        "D": 28,
+        "X": 52
+      },
+      "percentageCorrect": 74,
+      "percentageBlanco": 8
+    },
+    {
+      "questionId": 16,
+      "position": 16,
+      "givenAnswer": "C",
+      "correctAnswer": "C",
+      "allAnswers": {
+        "A": 10,
+        "B": 9,
+        "C": 527,
+        "D": 43,
+        "X": 9
+      },
+      "percentageCorrect": 88,
+      "percentageBlanco": 1
+    },
+    {
+      "questionId": 17,
+      "position": 17,
+      "givenAnswer": "D",
+      "correctAnswer": "D",
+      "allAnswers": {
+        "A": 50,
+        "B": 25,
+        "C": 47,
+        "D": 429,
+        "X": 47
+      },
+      "percentageCorrect": 72,
+      "percentageBlanco": 7
+    },
+    {
+      "questionId": 18,
+      "position": 18,
+      "givenAnswer": "C",
+      "correctAnswer": "C",
+      "allAnswers": {
+        "A": 15,
+        "B": 37,
+        "C": 485,
+        "D": 56,
+        "X": 5
+      },
+      "percentageCorrect": 81,
+      "percentageBlanco": 0
+    },
+    {
+      "questionId": 19,
+      "position": 19,
+      "givenAnswer": "A",
+      "correctAnswer": "A",
+      "allAnswers": {
+        "A": 543,
+        "B": 7,
+        "C": 13,
+        "D": 3,
+        "X": 32
+      },
+      "percentageCorrect": 91,
+      "percentageBlanco": 5
+    },
+    {
+      "questionId": 20,
+      "position": 20,
+      "givenAnswer": "D",
+      "correctAnswer": "D",
+      "allAnswers": {
+        "A": 61,
+        "B": 19,
+        "C": 42,
+        "D": 400,
+        "X": 76
+      },
+      "percentageCorrect": 67,
+      "percentageBlanco": 12
+    },
+    {
+      "questionId": 21,
+      "position": 21,
+      "givenAnswer": "B",
+      "correctAnswer": "D",
+      "allAnswers": {
+        "A": 30,
+        "B": 166,
+        "C": 46,
+        "D": 337,
+        "X": 19
+      },
+      "percentageCorrect": 56,
+      "percentageBlanco": 3
+    },
+    {
+      "questionId": 22,
+      "position": 22,
+      "givenAnswer": "C",
+      "correctAnswer": "C",
+      "allAnswers": {
+        "A": 29,
+        "B": 25,
+        "C": 272,
+        "D": 190,
+        "X": 82
+      },
+      "percentageCorrect": 45,
+      "percentageBlanco": 13
+    },
+    {
+      "questionId": 23,
+      "position": 23,
+      "givenAnswer": "C",
+      "correctAnswer": "C",
+      "allAnswers": {
+        "A": 25,
+        "B": 45,
+        "C": 381,
+        "D": 34,
+        "X": 113
+      },
+      "percentageCorrect": 64,
+      "percentageBlanco": 18
+    },
+    {
+      "questionId": 24,
+      "position": 24,
+      "givenAnswer": "B",
+      "correctAnswer": "B",
+      "allAnswers": {
+        "A": 13,
+        "B": 494,
+        "C": 45,
+        "D": 18,
+        "X": 28
+      },
+      "percentageCorrect": 83,
+      "percentageBlanco": 4
+    },
+    {
+      "questionId": 25,
+      "position": 25,
+      "givenAnswer": "B",
+      "correctAnswer": "B",
+      "allAnswers": {
+        "A": 78,
+        "B": 399,
+        "C": 21,
+        "D": 45,
+        "X": 55
+      },
+      "percentageCorrect": 67,
+      "percentageBlanco": 9
+    }
+  ],
+  "feedbackCode": "19in40866",
+  "config": {
+    "toetsCode": "in",
+    "toetsSessie": 19,
+    "aantalVragen": 25,
+    "subscores": [
+      {
+        "name": "totaal",
+        "maxScore": 20,
+        "vragenIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      },
+      {
+        "name": "wiskunde_basis",
+        "maxScore": 10,
+        "vragenIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "wiskunde_standaard",
+        "maxScore": 15,
+        "vragenIds": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    ]
+  },
+  "statistics": {
+    "amountOfParticipants": 598,
+    "subScoreStatistics": [
+      {
+        "subScoreName": "totaal",
+        "highestScore": 20,
+        "lowestScore": 0,
+        "meanScore": 15.25,
+        "medianScore": 16,
+        "scoreAmounts": [
+          {
+            "score": 0,
+            "amount": 3
+          },
+          {
+            "score": 1,
+            "amount": 0
+          },
+          {
+            "score": 2,
+            "amount": 2
+          },
+          {
+            "score": 3,
+            "amount": 1
+          },
+          {
+            "score": 4,
+            "amount": 3
+          },
+          {
+            "score": 5,
+            "amount": 1
+          },
+          {
+            "score": 6,
+            "amount": 2
+          },
+          {
+            "score": 7,
+            "amount": 7
+          },
+          {
+            "score": 8,
+            "amount": 12
+          },
+          {
+            "score": 9,
+            "amount": 11
+          },
+          {
+            "score": 10,
+            "amount": 25
+          },
+          {
+            "score": 11,
+            "amount": 27
+          },
+          {
+            "score": 12,
+            "amount": 20
+          },
+          {
+            "score": 13,
+            "amount": 46
+          },
+          {
+            "score": 14,
+            "amount": 43
+          },
+          {
+            "score": 15,
+            "amount": 54
+          },
+          {
+            "score": 16,
+            "amount": 71
+          },
+          {
+            "score": 17,
+            "amount": 83
+          },
+          {
+            "score": 18,
+            "amount": 92
+          },
+          {
+            "score": 19,
+            "amount": 62
+          },
+          {
+            "score": 20,
+            "amount": 33
+          }
+        ]
+      },
+      {
+        "subScoreName": "wiskunde_basis",
+        "highestScore": 10,
+        "lowestScore": 0,
+        "meanScore": 9.12,
+        "medianScore": 10,
+        "scoreAmounts": [
+          {
+            "score": 0,
+            "amount": 3
+          },
+          {
+            "score": 1,
+            "amount": 0
+          },
+          {
+            "score": 2,
+            "amount": 2
+          },
+          {
+            "score": 3,
+            "amount": 2
+          },
+          {
+            "score": 4,
+            "amount": 1
+          },
+          {
+            "score": 5,
+            "amount": 8
+          },
+          {
+            "score": 6,
+            "amount": 17
+          },
+          {
+            "score": 7,
+            "amount": 48
+          },
+          {
+            "score": 8,
+            "amount": 22
+          },
+          {
+            "score": 9,
+            "amount": 162
+          },
+          {
+            "score": 10,
+            "amount": 333
+          }
+        ]
+      },
+      {
+        "subScoreName": "wiskunde_standaard",
+        "highestScore": 15,
+        "lowestScore": 0,
+        "meanScore": 9.98,
+        "medianScore": 11,
+        "scoreAmounts": [
+          {
+            "score": 0,
+            "amount": 10
+          },
+          {
+            "score": 1,
+            "amount": 1
+          },
+          {
+            "score": 2,
+            "amount": 12
+          },
+          {
+            "score": 3,
+            "amount": 10
+          },
+          {
+            "score": 4,
+            "amount": 15
+          },
+          {
+            "score": 5,
+            "amount": 13
+          },
+          {
+            "score": 6,
+            "amount": 37
+          },
+          {
+            "score": 7,
+            "amount": 45
+          },
+          {
+            "score": 8,
+            "amount": 54
+          },
+          {
+            "score": 9,
+            "amount": 23
+          },
+          {
+            "score": 10,
+            "amount": 69
+          },
+          {
+            "score": 11,
+            "amount": 85
+          },
+          {
+            "score": 12,
+            "amount": 83
+          },
+          {
+            "score": 13,
+            "amount": 26
+          },
+          {
+            "score": 14,
+            "amount": 72
+          },
+          {
+            "score": 15,
+            "amount": 43
+          }
+        ]
+      }
+    ]
+  }
+}
