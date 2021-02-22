@@ -4,13 +4,13 @@ import express from "express";
 import * as basicAuth from "express-basic-auth";
 import rateLimit from "express-rate-limit";
 import fs from "fs";
+import morgan from "morgan";
 import multer from "multer";
 import path from "path";
 import { feedbackFileTypes, parseFeedbackCode, ParticipationResponse, ProcessedData, Program } from "../../frontend/src/Shared/data";
 import { createPersonalFeedbackFiles } from "./PersonalFeedbackCreator";
-import morgan from "morgan"
 
-const accessLogStream = fs.createWriteStream(`logs/access-${Math.random().toString(36).substring(7)}.log`, { flags: 'a' })
+const accessLogStream = fs.createWriteStream(`logs/access-${Math.random().toString(36).substring(7)}.log`, { flags: "a" });
 
 const IS_EDITOR = process.env.IS_EDITOR === "true";
 
@@ -21,10 +21,10 @@ const editorKeys: { [programCode: string]: string[] } = JSON.parse(fs.readFileSy
 const app = express();
 app.set("trust proxy", 1);
 app.use(morgan(":method :url :status :response-time ms [:date[iso]]", {
-        skip: function (req: any, res: any) { 
+        skip(req: any, res: any) {
             return req.path.startsWith("/static")
-                || req.path.startsWith("/logo-ijkingstoets") 
-                || req.path.startsWith("/manifest.json") 
+                || req.path.startsWith("/logo-ijkingstoets")
+                || req.path.startsWith("/manifest.json");
         },
         stream: accessLogStream
     }
@@ -76,7 +76,7 @@ if (IS_EDITOR) {
             return;
         }
 
-        if(!req.body){ // Missing body data
+        if (!req.body) { // Missing body data
             res.sendStatus(500);
         }
 
@@ -200,13 +200,13 @@ if (IS_EDITOR) {
         }
     });
 } else {
-    const PROXY_PATH = process.env.PROXY_PATH;
-    if (!PROXY_PATH) {
-        console.error("Missing PROXY PATH");
-        process.exit(1);
-    }
+    // const PROXY_PATH = process.env.PROXY_PATH;
+    // if (!PROXY_PATH) {
+    //     console.error("Missing PROXY PATH");
+    //     process.exit(1);
+    // }
     const proxy = require("express-http-proxy");
-    app.use("/", proxy(PROXY_PATH, {
+    app.use("/", proxy("localhost:3000", {
         filter(req: {method: String, path: String}, _res: unknown) {
             return req.method === "POST" || (req.method === "GET" && (req.path === "/programs" || req.path === "/fetch")); // Proxy all post requests, get programs and get fetch
         },
@@ -283,9 +283,9 @@ if (IS_EDITOR) {
             Object.keys(editorKeys).filter((e) => editorKeys[e].indexOf(feedbackCodeInfo.feedbackCode) > -1).length === 1;
         if ((feedbackCodeInfo && isExistingFeedbackCode())) { // images only visible with valid feedbackCode or to editors
             try {
-            res.send(fs.readFileSync(`persist/data/pictures/${feedbackCodeInfo.session}-${feedbackCodeInfo.program}-question-${questionNumber}.png`)); 
+            res.send(fs.readFileSync(`persist/data/pictures/${feedbackCodeInfo.session}-${feedbackCodeInfo.program}-question-${questionNumber}.png`));
             } catch (e) {
-                res.sendStatus(500)
+                res.sendStatus(500);
             }
             return;
         }
@@ -300,11 +300,11 @@ if (IS_EDITOR) {
 app.get("/crash", basicAuth.default({
     users: { resetter: process.env.RESETTER },
     challenge: true
-}), function (req, res) {
+}), function(req, res) {
     process.exit(1);
 });
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT);
 console.info(`Listening on port ${PORT}`);
 if (IS_EDITOR) {

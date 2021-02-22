@@ -242,7 +242,7 @@ export default class MarkdownParser {
                     value: equationSide
                 }
             }
-            throw(`Onbekende variable ${equationSide}.`)
+            throw Error(`Onbekende variable ${equationSide}.`)
         }
         const value = Number(equationSide)
         if (isNaN(value))

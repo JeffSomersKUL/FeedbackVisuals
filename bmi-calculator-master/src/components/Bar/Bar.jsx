@@ -2,7 +2,7 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import PropTypes from 'prop-types';
 
-const Bar = ({ labelData, bmiData }) => {
+const Bar = ({ labelData, bmiData, totalData }) => {
   const data = canvas => {
     const ctx = canvas.getContext('2d');
     const gradient = ctx.createLinearGradient(63, 81, 181, 700);
@@ -13,8 +13,18 @@ const Bar = ({ labelData, bmiData }) => {
       labels: labelData,
       datasets: [
         {
-          label: 'BMI',
+          label: 'persoonlijke punten',
           data: bmiData,
+          //backgroundColor: gradient,
+          //borderColor: '#3F51B5',
+          pointRadius: 6,
+          pointHoverRadius: 8,
+          pointHoverBorderColor: 'white',
+          pointHoverBorderWidth: 2
+        },
+        {
+          label: 'gemiddelde',
+          data: totalData,
           backgroundColor: gradient,
           borderColor: '#3F51B5',
           pointRadius: 6,
@@ -53,14 +63,14 @@ const Bar = ({ labelData, bmiData }) => {
             display: true,
             labelString: 'BMI',
             fontSize: 18,
-            fontColor: 'white'
+            fontColor: 'black'
           },
           gridLines: {
             display: false,
             color: 'white'
           },
           ticks: {
-            fontColor: 'white',
+            fontColor: 'black',
             fontSize: 16,
             beginAtZero: true
           }
