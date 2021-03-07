@@ -176,15 +176,32 @@ def create_csv_file(servey, template):
     column_len_survey = len(list(sheet_servey.columns)[0])
     row_len_survey = len(list(sheet_servey.rows)[0])
 
+    sum_plan_van_aanpak = 0
+    sum_concepten = 0
+    sum_wiskundig_model = 0
+    sum_rekentechnische_aanpak = 0
+    sum_fysische_interpretatie = 0
+    sum_student = 0
 
-    with open('test.csv', 'w', newline= '') as file:
+    with open('test.csv', 'w', newline='') as file:
         writer = csv.writer(file)
+
         row_index = 3
         while row_index < column_len_survey:
             student = sheet_servey.cell(row=row_index, column=column_response_ID_number).value
             data_student = get_list_data(student, sheet_template, sheet_servey, column_len_template, column_len_survey, row_len_survey)
             writer.writerow([student] + data_student)
+            sum_plan_van_aanpak += data_student[plan_van_aanpak]
+            sum_concepten += data_student[concepten]
+            sum_wiskundig_model += data_student[wiskundig_model]
+            sum_rekentechnische_aanpak += data_student[rekentechnische_aanpak]
+            sum_fysische_interpretatie += data_student[fysische_interpretatie]
+            sum_student += 1
             row_index += 1
+        average_data = [float(sum_plan_van_aanpak)/float(sum_student), float(sum_concepten)/float(sum_student),
+                        float(sum_wiskundig_model)/float(sum_student), float(sum_rekentechnische_aanpak)/float(sum_student),
+                        float(sum_fysische_interpretatie)/float(sum_student)]
 
+        writer.writerow(['Average'] + average_data)
 
 create_csv_file('data_kul.xlsx','template.xlsx')
