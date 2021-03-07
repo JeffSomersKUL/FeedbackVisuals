@@ -9,40 +9,33 @@ import csv from 'jquery-csv';
 class App extends Component {
   constructor(props) {
     super(props);
-    const defaultData = [[1,2,3,4,5],[1.3,2.1,2.9,3.8,5],[4,3,2,1,5],[3.8,2.9,2.1,1.3,5],[1,2,3,4,5],[3.8,2.9,2.1,1.3,5]];
-    this.state = {personal: defaultData,
-    average: defaultData}
-  }
-  // useEffect(() => {
-  //   // take data for r-nummer
-  //   console.log("test");
-  //   const rnummer = "R_2xS1yjFrKr8h1r9";
-  //   // put data in graphs
+    const defaultPersonalData = [[1.0,0.5714285714285714,0.95,1.0,0.0],
+                    [1.0,0.5714285714285714,0.8666666666666667,1.0,0.4],
+                    [1.0,0.5714285714285714,0.8666666666666667,0.7946428571428572,0.2],
+                    [0.8333333333333334,0.5714285714285714,0.95,1.0,0.6],
+                    [1.0,0.5714285714285714,0.7595238095238095,1.0,0.4],
+                    [0.8333333333333334,0.5714285714285714,0.8666666666666667,1.0,0.6]];
 
-  //   // profit
-
-  // });
-
-  callServer() {
-    fetch("http://localhost:9000/testServer/rnummer")
-      .then(res => res.json())
-      .then(res => {
-        console.log(res);
-        this.setState({personal: res.personal, average: res.average})})
-      .catch(err => err);
-  }
-
-  componentDidMount() {
-    this.callServer();
+    const defaultAverageData = [[1.0,0.2857142857142857,0.6928571428571428,0.5357142857142857,0.4],
+                    [1.0,0.5714285714285714,0.7952380952380952,1.0,0.8],
+                    [0.8333333333333334,0.5714285714285714,0.7785714285714286,0.5446428571428572,0.2],
+                    [1.0,0.5714285714285714,0.85,0.9285714285714286,0.2],
+                    [1.0,1.0,0.7238095238095238,1.0,0.6],
+                    [0.8333333333333334,0.7142857142857143,0.8666666666666667,1.0,0.4]];
+    this.state = {personal: defaultPersonalData,
+                  average: defaultAverageData};
   }
 
   render() {
-    const update = () => {
-      console.log("test");
-      //var data = csv.toObjects("../../../../data-fetching/output/1.csv");
-      var data = csv.toObjects("1");
-      console.log(data[0]);
+    const callServer = () => {
+      fetch("http://localhost:9000/testServer/rnummer")
+        .then(res => res.json())
+        .then(res => {
+          console.log(res);
+          this.setState({personal: res.personal, average: res.average})})
+        .catch(err => err);
     }
+
     
     return (
       <>
@@ -60,7 +53,7 @@ class App extends Component {
                   </form>
                 </li>
                 <li className="tab">
-                  <a className="waves-effect waves-light btn findbtn" onClick={() => {update()}}>button</a>
+                  <a className="waves-effect waves-light btn findbtn" onClick={() => {callServer()}}>button</a>
                 </li>
               </ul>
             </div>
@@ -96,15 +89,15 @@ class App extends Component {
             </div>   
           </div>
           <div className='col s8' style={{height:300}}>
-              <QuestionBar />
+              <QuestionBar personal={this.state.personal}/>
           </div>
         </div>
   
         <div className='card-panel row'>
-          <div className='col s6' style={{height:300}}>
-              <MyLine personal={this.state.personal[0]} average={this.state.average[0]} />
+          <div className='col s8' style={{height:300}}>
+              <MyLine personal={this.state.personal} average={this.state.average} index={0} />
           </div>
-          <div className='col s6'>
+          <div className='col s4'>
             <div className='valign-wrapper'>
               <div className='center-align'>
                 <h5> Default header</h5>
@@ -115,6 +108,73 @@ class App extends Component {
             </div>   
           </div>
         </div>
+
+        <div className='card-panel row'>
+          <div className='col s4'>
+            <div className='valign-wrapper'>
+              <div className='center-align'>
+                <h5> Default header</h5>
+                <span className='black-text'>
+                  mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
+                </span>
+              </div>
+            </div>   
+          </div>
+          <div className='col s8' style={{height:300}}>
+              <MyLine personal={this.state.personal} average={this.state.average} index={1} />
+          </div>
+        </div>
+
+        <div className='card-panel row'>
+          <div className='col s8' style={{height:300}}>
+              <MyLine personal={this.state.personal} average={this.state.average} index={2} />
+          </div>
+          <div className='col s4'>
+            <div className='valign-wrapper'>
+              <div className='center-align'>
+                <h5> Default header</h5>
+                <span className='black-text'>
+                  mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
+                </span>
+              </div>
+            </div>   
+          </div>
+        </div>
+
+        <div className='card-panel row'>
+          <div className='col s4'>
+            <div className='valign-wrapper'>
+              <div className='center-align'>
+                <h5> Default header</h5>
+                <span className='black-text'>
+                  mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
+                </span>
+              </div>
+            </div>   
+          </div>
+          <div className='col s8' style={{height:300}}>
+              <MyLine personal={this.state.personal} average={this.state.average} index={3} />
+          </div>
+        </div>
+
+        <div className='card-panel row'>
+          <div className='col s8' style={{height:300}}>
+              <MyLine personal={this.state.personal} average={this.state.average} index={4} />
+          </div>
+          <div className='col s4'>
+            <div className='valign-wrapper'>
+              <div className='center-align'>
+                <h5> Default header</h5>
+                <span className='black-text'>
+                  mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
+                </span>
+              </div>
+            </div>   
+          </div>
+        </div>
+
+
+
       </div>
       </>
     );

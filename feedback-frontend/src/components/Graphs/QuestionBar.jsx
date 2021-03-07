@@ -8,44 +8,24 @@ import PropTypes from 'prop-types';
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-const QuestionBar = ({ tdata /* see data tab */ }) => {
-    const data = [
-        {
-          "vraag": "Oefenzitting 1",
-          "Plan van aanpak": 122,
-          "Concepten": 118,
-          "Wiskundig model": 24,
-          "Rekentechnisch": 139,
-          "Interpretatie": 129
-        },
-        {
-          "vraag": "Oefenzitting 2",
-          "Plan van aanpak": 122,
-          "Concepten": 118,
-          "Wiskundig model": 24,
-          "Rekentechnisch": 139,
-          "Interpretatie": 129
-        },
-        {
-          "vraag": "Oefenzitting 3",
-          "Plan van aanpak": 122,
-          "Concepten": 118,
-          "Wiskundig model": 24,
-          "Rekentechnisch": 139,
-          "Interpretatie": 129
-        },
-        {
-          "vraag": "Oefenzitting 4",
-          "Plan van aanpak": 122,
-          "Concepten": 118,
-          "Wiskundig model": 24,
-          "Rekentechnisch": 139,
-          "Interpretatie": 129
-        }
-      ]
+const QuestionBar = ({ personal}) => {
+
+    var personaldata = [];
+    
+    for (var i=0; i<personal.length; i++) {
+        personaldata.push({
+            "vraag": "Oefenzitting "+(i+1),
+            "Plan van aanpak": personal[i][0],
+            "Concepten": personal[i][1],
+            "Wiskundig model": personal[i][2],
+            "Rekentechnisch": personal[i][3],
+            "Interpretatie": personal[i][4],
+        })
+    }
+
     return (
     <ResponsiveBar
-        data={data}
+        data={personaldata}
         keys={[ 'Plan van aanpak', 'Concepten', 'Wiskundig model', 'Rekentechnisch','Interpretatie']}
         indexBy="vraag"
         margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
@@ -72,6 +52,7 @@ const QuestionBar = ({ tdata /* see data tab */ }) => {
             legendPosition: 'middle',
             legendOffset: -40
         }}
+        enableLabel={false}
         labelSkipWidth={12}
         labelSkipHeight={12}
         labelTextColor={{ from: 'color', modifiers: [ [ 'darker', '1.4' ] ] }}

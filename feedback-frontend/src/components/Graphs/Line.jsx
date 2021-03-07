@@ -8,120 +8,22 @@ import PropTypes from 'prop-types';
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-const MyLine = ({ data /* see data tab */ }) => {
-    const testdata = [
-        {
-          "id": "japan",
-          "data": [
-            {
-              "x": "plane",
-              "y": 296
-            },
-            {
-              "x": "helicopter",
-              "y": 25
-            },
-            {
-              "x": "boat",
-              "y": 182
-            },
-            {
-              "x": "train",
-              "y": 290
-            },
-            {
-              "x": "subway",
-              "y": 175
-            },
-            {
-              "x": "bus",
-              "y": 20
-            },
-            {
-              "x": "car",
-              "y": 269
-            },
-            {
-              "x": "moto",
-              "y": 191
-            },
-            {
-              "x": "bicycle",
-              "y": 216
-            },
-            {
-              "x": "horse",
-              "y": 197
-            },
-            {
-              "x": "skateboard",
-              "y": 125
-            },
-            {
-              "x": "others",
-              "y": 212
-            }
-          ]
-        },
-        {
-          "id": "france",
-          "data": [
-            {
-              "x": "plane",
-              "y": 47
-            },
-            {
-              "x": "helicopter",
-              "y": 82
-            },
-            {
-              "x": "boat",
-              "y": 62
-            },
-            {
-              "x": "train",
-              "y": 126
-            },
-            {
-              "x": "subway",
-              "y": 35
-            },
-            {
-              "x": "bus",
-              "y": 261
-            },
-            {
-              "x": "car",
-              "y": 262
-            },
-            {
-              "x": "moto",
-              "y": 147
-            },
-            {
-              "x": "bicycle",
-              "y": 84
-            },
-            {
-              "x": "horse",
-              "y": 215
-            },
-            {
-              "x": "skateboard",
-              "y": 18
-            },
-            {
-              "x": "others",
-              "y": 7
-            }
-          ]
-        }
-      ]
+const MyLine = ({ personal, average, index /* see data tab */ }) => {
+    
+    const personaldata = {"id": "personal", "data":[]};
+    const averagedata = {"id": "average", "data":[]};
+   
+    for(var i=0; i< personal.length; i++ ) {
+      personaldata.data.push({"x": "Oefenzitting "+(i+1),"y":personal[i][index]});
+      averagedata.data.push({"x": "Oefenzitting "+(i+1),"y":average[i][index]});
+    }; 
+    const data = [personaldata, averagedata];
+
     return (<ResponsiveLine
-        data={testdata}
+        data={data}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
         xScale={{ type: 'point' }}
-        yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: true, reverse: false }}
+        yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: false, reverse: false }}
         yFormat=" >-.2f"
         curve="natural"
         axisTop={null}
