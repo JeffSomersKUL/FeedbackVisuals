@@ -1,0 +1,59 @@
+{
+  "name": "bmical",
+  "version": "0.1.0",
+  "homepage": "http://GermaVinsmoke.github.io/bmi-calculator",
+  "dependencies": {
+    "@nivo/bar": "^0.67.0",
+    "@nivo/core": "^0.67.0",
+    "@nivo/legends": "^0.67.0",
+    "@nivo/line": "^0.67.0",
+    "@nivo/radar": "^0.67.0",
+    "@types/jest": "24.0.20",
+    "jquery-csv": "^1.0.11",
+    "materialize-css": "1.0.0",
+    "nivo": "^0.31.0",
+    "prop-types": "15.7.2",
+    "react": "16.11.0",
+    "react-chartjs-2": "2.8.0",
+    "react-dom": "16.11.0",
+    "react-scripts": "3.1.1",
+    "uuid": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "cypress": "cypress open"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "codecov.io": "^0.1.6",
+    "coveralls": "^3.0.11",
+    "gh-pages": "^2.2.0"
+  }
+}
