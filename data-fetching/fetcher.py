@@ -183,8 +183,9 @@ def create_csv_file(servey, template):
     sum_fysische_interpretatie = 0
     sum_student = 0
 
-    with open('test.csv', 'w', newline='') as file:
+    with open('../feedback-server/oefenzittingen/test.csv', 'w', newline='') as file:
         writer = csv.writer(file)
+        writer.writerow(["Rnummer"]+["plan"]+["concepten"]+["wiskundig"]+["rekentechnisch"]+["interpretatie"])
 
         row_index = 3
         while row_index < column_len_survey:

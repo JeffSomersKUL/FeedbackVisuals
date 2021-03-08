@@ -50,6 +50,8 @@ const update = () => {
     .on('data', (row) => {
         if (row.Rnummer == 'R_3CWsYWSQlK41wli')
             console.log(row);
+        row.plan;
+        row.concepten
     })
     .on('end', () => {
         console.log('CSV file successfully processed');
