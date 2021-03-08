@@ -3,7 +3,9 @@ const app = require("../app");
 var router = express.Router();
 
 var fs = require("fs");
-import csv from 'jquery-csv';
+//var csv = require("jquery-csv");
+const csv = require('csv-parser');
+
 
 
 const defaultPersonalData = [[1.0,0.2857142857142857,0.6928571428571428,0.5357142857142857,0.4],
@@ -25,6 +27,7 @@ router.get("/", function(req, res, next) {
 });
 
 router.get('/rnummer', (req, res) => {
+    update();
     res.json({personal: defaultPersonalData, average: defaultAverageData});
 });
 
@@ -32,8 +35,25 @@ router.get('/rnummer', (req, res) => {
 const update = () => {
     console.log("test");
     //var data = csv.toObjects("../../../../data-fetching/output/1.csv");
-    var data = csv.toObjects("1");
-    console.log(data[0]);
+
+    // var file = fs.readFile("oefenzittingen/1.csv", (err, data) => {
+    //     if (err) {
+    //         return console.log(err);
+    //     }
+    //     console.log(file);
+    //     var data = csv.toObjects(file);
+    //     console.log(data[0]);
+    // });
+
+    fs.createReadStream('oefenzittingen/1.csv')
+    .pipe(csv())
+    .on('data', (row) => {
+        if (row.Rnummer == 'R_3CWsYWSQlK41wli')
+            console.log(row);
+    })
+    .on('end', () => {
+        console.log('CSV file successfully processed');
+    });
 }
 
 module.exports = router;
