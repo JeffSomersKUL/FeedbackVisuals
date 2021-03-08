@@ -147,7 +147,7 @@ def get_list_data(student, sheet_template, sheet_servey, column_len_template, co
     return data
 
 
-def create_csv_file(servey, template):
+def create_csv_file(servey, template, name):
     servey_file = servey
     template_file = template
 
@@ -183,7 +183,7 @@ def create_csv_file(servey, template):
     sum_fysische_interpretatie = 0
     sum_student = 0
 
-    with open('../feedback-server/oefenzittingen/test.csv', 'w', newline='') as file:
+    with open('../feedback-server/oefenzittingen/' + name + '.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(["Rnummer"]+["plan"]+["concepten"]+["wiskundig"]+["rekentechnisch"]+["interpretatie"])
 
@@ -205,4 +205,4 @@ def create_csv_file(servey, template):
 
         writer.writerow(['Average'] + average_data)
 
-create_csv_file('data_kul.xlsx','template.xlsx')
+create_csv_file('data_kul.xlsx','template.xlsx', '4')
