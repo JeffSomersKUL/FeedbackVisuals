@@ -3,11 +3,12 @@ const app = require("../app");
 var router = express.Router();
 
 var fs = require("fs");
-//var csv = require("jquery-csv");
-const csv = require('csv-parser');
+var csv = require("jquery-csv");
 
+// ADD THE NAME OF YOUR CSV-FILE HERE
+const csvfiles = ["1","test","1","1","1","1"];
 
-
+// DONT TOUCH THIS CODE
 const defaultPersonalData = [[1.0,0.2857142857142857,0.6928571428571428,0.5357142857142857,0.4],
                     [1.0,0.5714285714285714,0.7952380952380952,1.0,0.8],
                     [0.8333333333333334,0.5714285714285714,0.7785714285714286,0.5446428571428572,0.2],
@@ -22,40 +23,39 @@ const defaultAverageData = [[1.0,0.5714285714285714,0.8666666666666667,1.0,0.8],
                     [0.8333333333333334,0.5714285714285714,0.8785714285714286,0.9375,0.0],
                     [0.8333333333333334,0.5714285714285714,0.95,1.0,0.2]];
 
+
 router.get("/", function(req, res, next) {
     res.send("API is working properly");
 });
 
 router.get('/rnummer', (req, res) => {
-    update();
-    res.json({personal: defaultPersonalData, average: defaultAverageData});
+    console.log(req.query.rnummer);
+    let data =update(req.query.rnummer)
+    console.log(data);
+    res.json(data);
 });
 
 
-const update = () => {
-    console.log("test");
-    //var data = csv.toObjects("../../../../data-fetching/output/1.csv");
+function update(rnummer) {
+    var returndata = [];
+    var averagedata = [];
+    for (filename in csvfiles) {
 
-    // var file = fs.readFile("oefenzittingen/1.csv", (err, data) => {
-    //     if (err) {
-    //         return console.log(err);
-    //     }
-    //     console.log(file);
-    //     var data = csv.toObjects(file);
-    //     console.log(data[0]);
-    // });
+        const data = fs.readFileSync('oefenzittingen/'+csvfiles[filename]+'.csv', {encoding:'utf8'});
+        const parsedData = csv.toObjects(data);
+        
+        for (i in parsedData){
+            row = parsedData[i];
+            if (row.Rnummer == rnummer) {
+                returndata.push([row.plan, row.concepten, row.wiskundig, row.rekentechnisch, row.interpretatie]);
+                let avgRow = parsedData[parsedData.length -1];
+                averagedata.push([avgRow.plan, avgRow.concepten, avgRow.wiskundig, avgRow.rekentechnisch, avgRow.interpretatie]);
+            }
+        }
 
-    fs.createReadStream('oefenzittingen/1.csv')
-    .pipe(csv())
-    .on('data', (row) => {
-        if (row.Rnummer == 'R_3CWsYWSQlK41wli')
-            console.log(row);
-        row.plan;
-        row.concepten
-    })
-    .on('end', () => {
-        console.log('CSV file successfully processed');
-    });
+    }
+
+    return {personal: returndata, average: averagedata};
 }
 
 module.exports = router;

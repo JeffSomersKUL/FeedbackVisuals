@@ -27,8 +27,8 @@ class App extends Component {
   }
 
   render() {
-    const callServer = () => {
-      fetch("http://localhost:9000/testServer/rnummer")
+    const callServer = (rnummer) => {
+      fetch("http://localhost:9000/testServer/rnummer?rnummer="+rnummer)
         .then(res => res.json())
         .then(res => {
           console.log(res);
@@ -53,7 +53,7 @@ class App extends Component {
                   </form>
                 </li>
                 <li className="tab">
-                  <a className="waves-effect waves-light btn findbtn" onClick={() => {callServer()}}>button</a>
+                  <a className="waves-effect waves-light btn findbtn" onClick={() => {callServer(document.getElementById("rNummer").value)}}>button</a>
                 </li>
               </ul>
             </div>
