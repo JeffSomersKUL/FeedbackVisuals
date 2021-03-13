@@ -23,26 +23,18 @@ const MyLine = ({ personal, average, index /* see data tab */ }) => {
         data={data}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
         xScale={{ type: 'point' }}
-        yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: false, reverse: false }}
+        yScale={{ type: 'linear', min: 0, max: 1, stacked: false, reverse: false }}
         yFormat=" >-.2f"
         curve="natural"
         axisTop={null}
         axisRight={null}
-        axisBottom={{
-            orient: 'bottom',
-            tickSize: 5,
-            tickPadding: 5,
-            tickRotation: 0,
-            legend: 'transportation',
-            legendOffset: 36,
-            legendPosition: 'middle'
-        }}
+        
         axisLeft={{
             orient: 'left',
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'count',
+            legend: 'score',
             legendOffset: -40,
             legendPosition: 'middle'
         }}

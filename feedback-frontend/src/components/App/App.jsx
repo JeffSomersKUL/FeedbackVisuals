@@ -68,9 +68,12 @@ class App extends Component {
           <div className='col s6'>
             <div className='valign-wrapper'>
               <div className='center-align'>
-                <h5> Default header</h5>
+                <h5> Radar plot</h5>
                 <span className='black-text'>
-                  mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
+                  Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
+                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
+                  geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
+                  al de studenten die de quizes afleggen.
                 </span>
               </div>
             </div>   
@@ -81,9 +84,11 @@ class App extends Component {
           <div className='col s4'>
             <div className='valign-wrapper'>
               <div className='center-align'>
-                <h5> Default header</h5>
+                <h5>Bar plot</h5>
                 <span className='black-text'>
-                  mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
+                  In deze grafiek wordt de evolutie van jouw persoonlijke score getoond over de oefenzittingen heen. Hiermee 
+                  krijg je een overzicht van jouw kwaliteiten en welke oefenzittingen moeilijker gingen. Elke staaf stelt een pijler
+                  voor, elke groep van staven beschrijft de score voor die specifieke oefenzitting.
                 </span>
               </div>
             </div>   
@@ -100,7 +105,7 @@ class App extends Component {
           <div className='col s4'>
             <div className='valign-wrapper'>
               <div className='center-align'>
-                <h5> Default header</h5>
+                <h5>Plan van aanpak</h5>
                 <span className='black-text'>
                   mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
                 </span>
@@ -113,7 +118,7 @@ class App extends Component {
           <div className='col s4'>
             <div className='valign-wrapper'>
               <div className='center-align'>
-                <h5> Default header</h5>
+                <h5>Concepten</h5>
                 <span className='black-text'>
                   mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
                 </span>
@@ -124,7 +129,6 @@ class App extends Component {
               <MyLine personal={this.state.personal} average={this.state.average} index={1} />
           </div>
         </div>
-
         <div className='card-panel row'>
           <div className='col s8' style={{height:300}}>
               <MyLine personal={this.state.personal} average={this.state.average} index={2} />
@@ -132,7 +136,7 @@ class App extends Component {
           <div className='col s4'>
             <div className='valign-wrapper'>
               <div className='center-align'>
-                <h5> Default header</h5>
+                <h5>Wiskundig model</h5>
                 <span className='black-text'>
                   mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
                 </span>
@@ -145,7 +149,7 @@ class App extends Component {
           <div className='col s4'>
             <div className='valign-wrapper'>
               <div className='center-align'>
-                <h5> Default header</h5>
+                <h5>Rekentechnische aanpak</h5>
                 <span className='black-text'>
                   mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
                 </span>
@@ -164,7 +168,7 @@ class App extends Component {
           <div className='col s4'>
             <div className='valign-wrapper'>
               <div className='center-align'>
-                <h5> Default header</h5>
+                <h5>Fysische Interpretatie</h5>
                 <span className='black-text'>
                   mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
                 </span>
