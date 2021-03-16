@@ -33,6 +33,8 @@ const QuestionBar = ({ personal}) => {
         groupMode="grouped"
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}
+        minValue={0}
+        maxValue={1}
         colors={{scheme:'nivo'}}
         borderColor={{ from: 'color', modifiers: [ [ 'darker', '1' ] ] }}
         axisTop={null}
@@ -48,7 +50,7 @@ const QuestionBar = ({ personal}) => {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'Aantal Studenten',
+            legend: 'Aantal score',
             legendPosition: 'middle',
             legendOffset: -40
         }}

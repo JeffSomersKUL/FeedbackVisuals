@@ -6,8 +6,10 @@ var fs = require("fs");
 var csv = require("jquery-csv");
 
 // ADD THE NAME OF YOUR CSV-FILE HERE
-const csvfiles = ["1","test","1","1","1","1"];
+const csvfiles = ["test","test","test","test","test","test"];
 
+//
+//
 // DONT TOUCH THIS CODE
 const defaultPersonalData = [[1.0,0.2857142857142857,0.6928571428571428,0.5357142857142857,0.4],
                     [1.0,0.5714285714285714,0.7952380952380952,1.0,0.8],
@@ -43,14 +45,20 @@ function update(rnummer) {
 
         const data = fs.readFileSync('oefenzittingen/'+csvfiles[filename]+'.csv', {encoding:'utf8'});
         const parsedData = csv.toObjects(data);
-        
+
+        const found = false;
         for (i in parsedData){
             row = parsedData[i];
             if (row.Rnummer == rnummer) {
+                found = true
                 returndata.push([row.plan, row.concepten, row.wiskundig, row.rekentechnisch, row.interpretatie]);
-                let avgRow = parsedData[parsedData.length -1];
-                averagedata.push([avgRow.plan, avgRow.concepten, avgRow.wiskundig, avgRow.rekentechnisch, avgRow.interpretatie]);
+                
             }
+        }
+        let avgRow = parsedData[parsedData.length -1];
+        averagedata.push([avgRow.plan, avgRow.concepten, avgRow.wiskundig, avgRow.rekentechnisch, avgRow.interpretatie]);
+        if (found == false){
+            returndata.push([0.0, 0.0, 0.0, 0.0, 0.0]);
         }
 
     }
