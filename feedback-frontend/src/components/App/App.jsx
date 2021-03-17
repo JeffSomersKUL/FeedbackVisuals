@@ -28,7 +28,7 @@ class App extends Component {
 
   render() {
     const callServer = (rnummer) => {
-      fetch("http://localhost:9000/rnummer?rnummer="+rnummer)
+      fetch("http://localhost:9000?rnummer="+rnummer)
         .then(res => res.json())
         .then(res => {
           console.log(res);
@@ -106,7 +106,10 @@ class App extends Component {
               <div className='center-align'>
                 <h5>Plan van aanpak</h5>
                 <span className='black-text'>
-                  mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
+                  Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
+                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
+                  geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
+                  al de studenten die de quizes afleggen.
                 </span>
               </div>
             </div>   
@@ -119,7 +122,10 @@ class App extends Component {
               <div className='center-align'>
                 <h5>Concepten</h5>
                 <span className='black-text'>
-                  mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
+                  Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
+                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
+                  geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
+                  al de studenten die de quizes afleggen.
                 </span>
               </div>
             </div>   
@@ -137,7 +143,10 @@ class App extends Component {
               <div className='center-align'>
                 <h5>Wiskundig model</h5>
                 <span className='black-text'>
-                  mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
+                  Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
+                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
+                  geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
+                  al de studenten die de quizes afleggen.
                 </span>
               </div>
             </div>   
@@ -150,7 +159,10 @@ class App extends Component {
               <div className='center-align'>
                 <h5>Rekentechnische aanpak</h5>
                 <span className='black-text'>
-                  mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
+                  Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
+                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
+                  geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
+                  al de studenten die de quizes afleggen.
                 </span>
               </div>
             </div>   
@@ -169,7 +181,10 @@ class App extends Component {
               <div className='center-align'>
                 <h5>Fysische Interpretatie</h5>
                 <span className='black-text'>
-                  mamamljfamdlnvadljhdsfk dsfpj lfsdqf dojvalkfndgaiupem lkvjds afebkzejj dsmfdas sghoqsdfndslm sdqjfqlkfh rabekf sdmjad fazelfhlfnaz mfhazeflnf ajzefmlaznf zmlke
+                  Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
+                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
+                  geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
+                  al de studenten die de quizes afleggen.
                 </span>
               </div>
             </div>   
