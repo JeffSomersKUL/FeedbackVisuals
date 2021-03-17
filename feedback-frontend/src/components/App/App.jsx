@@ -28,7 +28,7 @@ class App extends Component {
 
   render() {
     const callServer = (rnummer) => {
-      fetch("http://localhost:9000/testServer/rnummer?rnummer="+rnummer)
+      fetch("http://localhost:9000/rnummer?rnummer="+rnummer)
         .then(res => res.json())
         .then(res => {
           console.log(res);
@@ -36,7 +36,6 @@ class App extends Component {
         .catch(err => err);
     }
 
-    
     return (
       <>
       <div className='test'>
