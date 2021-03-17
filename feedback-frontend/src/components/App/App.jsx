@@ -52,7 +52,7 @@ class App extends Component {
                   </form>
                 </li>
                 <li className="tab">
-                  <a className="waves-effect waves-light btn findbtn" onClick={() => {callServer(document.getElementById("rNummer").value)}}>button</a>
+                  <a className="waves-effect waves-light btn findbtn" onClick={() => {callServer(document.getElementById("rNummer").value)}}>Submit</a>
                 </li>
               </ul>
             </div>
