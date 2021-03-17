@@ -1,15 +1,26 @@
+# Installeren van de dependencies
+- navigeer naar de folder 'feedback-frontend'
+- run 'npm install'
+
+- navigeer naar de folder 'feedbavk-server'
+- run 'npm install'
 
 # Reactjs app starten
 
 - open folder 'feedback-frontend'
 - run 'npm start' in terminal
-- op 'localhost:3000' is de app te zien
+- op 'localhost:3000' in de brower is nu de app te zien
 
 # Server starten
 
 - open folder 'feedback-server'
 - run 'npm start' in terminal
 - de server runt op poort 9000, maar de link met de frontend is al in orde. Je moet naast het opstarten niets meer toevoegen.
+
+# De grafieken aanpassen
+
+- Kies een rnummer hash. Deze zijn te vinden in de csv-files op de server als eerste entry (Zie **Keuze van oefenzittingen**).
+- Vul rechtsboven in de bovenbalk de hash in en druk op 'Submit'. Normaal zijn de grafieken nu aangepast.
 
 # Reactjs app bewerken
 
