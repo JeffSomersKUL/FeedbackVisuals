@@ -1,9 +1,0 @@
-scoreNaam	groepLabel	kleur	aantal
-totaal	<=7	rgb(255,140,0)	160
-totaal	8-9	rgb(255,215,0)	127
-totaal	10-13	rgb(144,238,144)	302
-totaal	>=14	rgb(21, 132, 21)	379
-wiskunde	<=7	rgb(255,140,0)	160
-wiskunde	8-9	rgb(255,215,0)	127
-wiskunde	10-13	rgb(144,238,144)	302
-wiskunde	>=14	rgb(21, 132, 21)	379
