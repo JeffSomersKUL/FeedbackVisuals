@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data-fetching/fetcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="205" selection-start-line="205" selection-end-line="205" />
+            <state relative-caret-position="-443">
+              <caret line="113" column="23" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
               <folding>
                 <element signature="e#25#40#0" expanded="true" />
               </folding>
@@ -23,20 +23,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data-fetching/test.csv">
+        <entry file="file://$PROJECT_DIR$/feedback-server/oefenzittingen/wz1.csv">
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="1972">
-              <caret line="116" column="75" selection-start-line="116" selection-start-column="75" selection-end-line="116" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data-fetching/test.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
     </leaf>
@@ -84,6 +75,29 @@
               <item name="FeedbackVisuals" type="b2602c69:ProjectViewProjectNode" />
               <item name="FeedbackVisuals" type="462c0819:PsiDirectoryNode" />
               <item name="data-fetching" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FeedbackVisuals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FeedbackVisuals" type="462c0819:PsiDirectoryNode" />
+              <item name="data-fetching" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FeedbackVisuals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FeedbackVisuals" type="462c0819:PsiDirectoryNode" />
+              <item name="data-fetching" type="462c0819:PsiDirectoryNode" />
+              <item name="werkzittingen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FeedbackVisuals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FeedbackVisuals" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FeedbackVisuals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FeedbackVisuals" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback-server" type="462c0819:PsiDirectoryNode" />
+              <item name="oefenzittingen" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -155,9 +169,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-301" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15858799" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15719947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -201,29 +216,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data-fetching/fetcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
+        <state relative-caret-position="-443">
+          <caret line="113" column="23" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
           <folding>
             <element signature="e#25#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data-fetching/test.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" column="75" selection-start-line="116" selection-start-column="75" selection-end-line="116" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data-fetching/test.csv" />
     <entry file="file://$PROJECT_DIR$/data-fetching/test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>

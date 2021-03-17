@@ -79,7 +79,7 @@ one_possible = 1
 ###################
 
 
-def calculate_score_single(index_question, number_question_offsets, maximale_score, sheet_template):
+def calculate_score_multiple(index_question, number_question_offsets, maximale_score, sheet_template):
     sum_score = 0
     for offset in number_question_offsets:
         if represents_int(offset):
@@ -93,20 +93,22 @@ def calculate_score_single(index_question, number_question_offsets, maximale_sco
         return var_score
 
 
-def calculate_score_multiple(index_question, number_question_offset, maximale_score, sheet_template):
+def calculate_score_single(index_question, number_question_offset, maximale_score, sheet_template):
     weighted_score = sheet_template.cell(row=index_question, column=int(column_maximale_score_number) +
                                                                     int(number_question_offset)).value
     return float(weighted_score) / float(maximale_score)
 
 
 def get_score(kind, index_question, number_question_offset, maximale_score, sheet_template):
-    score = 0
-    if kind == one_possible:
-        score = calculate_score_multiple(index_question, number_question_offset, maximale_score, sheet_template)
-    elif kind == multiple:
-        score = calculate_score_single(index_question, number_question_offset, maximale_score, sheet_template)
-    return score
-
+    if number_question_offset != None and number_question_offset != '':
+        score = 0
+        if kind == one_possible:
+            score = calculate_score_single(index_question, number_question_offset, maximale_score, sheet_template)
+        elif kind == multiple:
+            score = calculate_score_multiple(index_question, number_question_offset, maximale_score, sheet_template)
+        return score
+    else:
+        return 0
 
 # gets the data from the excel file from one student
 def get_list_data(student, sheet_template, sheet_servey, column_len_template, column_len_survey, row_len_survey):
@@ -128,7 +130,7 @@ def get_list_data(student, sheet_template, sheet_servey, column_len_template, co
         question_column_number = get_column_question(question, sheet_servey, row_len_survey)  # survey
         answer_student = sheet_servey.cell(row=row_student, column=question_column_number).value  # survey
 
-        score = get_score(kind, row_index_questions, answer_student, maximale_score, sheet_template)
+        score = get_score(kind, row_index_questions, answer_student, maximale_score, sheet_template)  # template
 
         # add it to the right thema
         if int(thema) == plan_van_aanpak:
@@ -148,8 +150,8 @@ def get_list_data(student, sheet_template, sheet_servey, column_len_template, co
 
 
 def create_csv_file(servey, template, name):
-    servey_file = servey
-    template_file = template
+    servey_file = 'werkzittingen/' + servey
+    template_file = 'werkzittingen/' + template
 
     # To open the workbook
     # workbook object is created
