@@ -15,7 +15,7 @@
 
 In 'feedback-frontend/src/compontents/App/App.jsx' is de hoofdpagina te vinden. Tussen lijn 67 en 177 zijn de verschillende teskstjes te vinden die getoond worden aan de studenten. Aan de rest van de code moet je normaal niet meer komen.
 
-<p align="center"> <img src="res/tekst_react.jpg"></p>
+<p align="center"> <img src="res/tekst_react.jpg" width="400"></p>
 
 # Keuze van oefenzittingen
 
