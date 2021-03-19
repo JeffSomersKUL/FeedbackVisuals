@@ -67,12 +67,12 @@ class App extends Component {
           <div className='col s6'>
             <div className='valign-wrapper'>
               <div className='center-align'>
-                <h5> Radar plot</h5>
+                <h5>Jouw profiel in de aanpak van oefeningen mechanica</h5>
                 <span className='black-text'>
                   Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
-                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
+                  leerstof volledig te verwerken. Het is een gemiddelde van alle de data over de oefenzittingen heen en 
                   geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
-                  al de studenten die de quizes afleggen.
+                  de andere studenten die de reflectiemodule gebruikten. 
                 </span>
               </div>
             </div>   
@@ -83,11 +83,10 @@ class App extends Component {
           <div className='col s4'>
             <div className='valign-wrapper'>
               <div className='center-align'>
-                <h5>Bar plot</h5>
+                <h5>Evolutie</h5>
                 <span className='black-text'>
-                  In deze grafiek wordt de evolutie van jouw persoonlijke score getoond over de oefenzittingen heen. Hiermee 
-                  krijg je een overzicht van jouw kwaliteiten en welke oefenzittingen moeilijker gingen. Elke staaf stelt een pijler
-                  voor, elke groep van staven beschrijft de score voor die specifieke oefenzitting.
+                  Deze grafiek toont de evolutie van jouw persoonlijke score op de vijf aspecten over de oefenzittingen heen.
+                  Elke staaf stelt één aspect, weergegeven in een specifieke kleur. De aspecten zijn gegroepeerd per oefenzitting.
                 </span>
               </div>
             </div>   
@@ -106,10 +105,7 @@ class App extends Component {
               <div className='center-align'>
                 <h5>Plan van aanpak</h5>
                 <span className='black-text'>
-                  Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
-                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
-                  geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
-                  al de studenten die de quizes afleggen.
+	    Deze visualisatie toont hoe jouw persoonlijke score op Plan van aanpak evolueerde over de oefenzittingen én hoe die zich vergelijkt ten opzichte van het gemiddelde van de andere studenten die de reflectiemodule invulden.
                 </span>
               </div>
             </div>   
@@ -122,10 +118,7 @@ class App extends Component {
               <div className='center-align'>
                 <h5>Concepten</h5>
                 <span className='black-text'>
-                  Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
-                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
-                  geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
-                  al de studenten die de quizes afleggen.
+	    Deze visualisatie toont hoe jouw persoonlijke score op Concepten evolueerde over de oefenzittingen én hoe die zich vergelijkt ten opzichte van het gemiddelde van de andere studenten die de reflectiemodule invulden.
                 </span>
               </div>
             </div>   
@@ -143,10 +136,7 @@ class App extends Component {
               <div className='center-align'>
                 <h5>Wiskundig model</h5>
                 <span className='black-text'>
-                  Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
-                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
-                  geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
-                  al de studenten die de quizes afleggen.
+	    Deze visualisatie toont hoe jouw persoonlijke score op Wiskundig model evolueerde over de oefenzittingen én hoe die zich vergelijkt ten opzichte van het gemiddelde van de andere studenten die de reflectiemodule invulden.
                 </span>
               </div>
             </div>   
@@ -157,12 +147,9 @@ class App extends Component {
           <div className='col s4'>
             <div className='valign-wrapper'>
               <div className='center-align'>
-                <h5>Rekentechnische aanpak</h5>
+                <h5>Rekentechnische Aanpak</h5>
                 <span className='black-text'>
-                  Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
-                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
-                  geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
-                  al de studenten die de quizes afleggen.
+	    Deze visualisatie toont hoe jouw persoonlijke score op Rekentechnische aanpak evolueerde over de oefenzittingen én hoe die zich vergelijkt ten opzichte van het gemiddelde van de andere studenten die de reflectiemodule invulden.
                 </span>
               </div>
             </div>   
@@ -179,12 +166,9 @@ class App extends Component {
           <div className='col s4'>
             <div className='valign-wrapper'>
               <div className='center-align'>
-                <h5>Fysische Interpretatie</h5>
+                <h5>Fysische interpretatie</h5>
                 <span className='black-text'>
-                  Deze radar plot is een weergave van jouw persoonlijke score op vijf aspecten die belangrijk zijn om de 
-                  leerstof volledig te verwerken. Het is een verzameling van alle de data over de oefenzittingen heen en 
-                  geeft je een overzicht van je sterke en zwakke punten. Jouw score wordt vergeleken met het gemiddelde van 
-                  al de studenten die de quizes afleggen.
+	    Deze visualisatie toont hoe jouw persoonlijke score op Fysische interpretatie evolueerde over de oefenzittingen én hoe die zich vergelijkt ten opzichte van het gemiddelde van de andere studenten die de reflectiemodule invulden.
                 </span>
               </div>
             </div>   
