@@ -14,7 +14,7 @@ const QuestionBar = ({ personal}) => {
     
     for (var i=0; i<personal.length; i++) {
         personaldata.push({
-            "vraag": "Oefenzitting "+(i+1),
+            "vraag": "Sessie "+(i+1),
             "Plan van aanpak": personal[i][0],
             "Concepten": personal[i][1],
             "Wiskundig model": personal[i][2],

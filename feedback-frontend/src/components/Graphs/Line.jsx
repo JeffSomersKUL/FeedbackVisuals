@@ -14,8 +14,8 @@ const MyLine = ({ personal, average, index /* see data tab */ }) => {
     const averagedata = {"id": "average", "data":[]};
    
     for(var i=0; i< personal.length; i++ ) {
-      personaldata.data.push({"x": "Oefenzitting "+(i+1),"y":personal[i][index]});
-      averagedata.data.push({"x": "Oefenzitting "+(i+1),"y":average[i][index]});
+      personaldata.data.push({"x": "Sessie "+(i+1),"y":personal[i][index]});
+      averagedata.data.push({"x": "Sessie "+(i+1),"y":average[i][index]});
     }; 
     const data = [personaldata, averagedata];
 
