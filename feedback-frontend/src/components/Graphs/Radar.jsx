@@ -10,31 +10,58 @@ import PropTypes from 'prop-types';
 
 
 const CustomRadar = ({ personal, average /* see data tab */ }) => {
+    console.log(average);
+    let avgPersonal = calculateAverage(personal);
+    let avgAverage = calculateAverage(average);
+    console.log(avgAverage);
+
+    function calculateAverage(data){
+      let amount = parseFloat(data.length);
+      let tot=[0.0,0.0,0.0,0.0,0.0];
+      for (const d in data){
+        let data0 = parseFloat(data[d][0]);
+        let data1 = parseFloat(data[d][1]);
+        let data2 = parseFloat(data[d][2]);
+        let data3 = parseFloat(data[d][3]);
+        let data4 = parseFloat(data[d][4]);
+        if (!(data0===0.0 && data1===0.0 && data2===0.0 && data3 === 0.0 && data4===0.0)){
+          tot[0] += data0;
+          tot[1] += data1;
+          tot[2] += data2;
+          tot[3] += data3;
+          tot[4] += data4;
+        } else {
+          amount -= 1;
+        }
+      }
+      console.log("after sum: "+tot);
+      return tot.map( i => i/amount)
+    }
     const RadarData = [
         {
           "pijler": "Plan van aanpak",
-          "average": average[0],
-          "personal": personal[0],
+          "average": avgAverage[0],
+          "personal": avgPersonal[0],
         },
         {
           "pijler": "Concepten",
-          "average": average[1],
-          "personal": personal[1],
+          "average": avgAverage[1],
+          "personal": avgPersonal[1],
         },
         {
           "pijler": "Wiskundig model",
-          "average": average[2],
-          "personal": personal[2],
+          "average": avgAverage[2],
+          "personal": avgPersonal[2],
         },
         {
           "pijler": "Rekentechnisch",
-          "average": average[3],
-          "personal": personal[3],
+          "average": avgAverage[3],
+          "personal": avgPersonal[3],
         },
         {
           "pijler": "Interpretatie",
-          "average": average[4],
-          "personal": personal[4],
+          "average": avgAverage[4],
+          "personal": avgPersonal[4],
         }
       ]
 

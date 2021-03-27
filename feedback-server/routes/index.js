@@ -8,7 +8,7 @@ var csv = require("jquery-csv");
 // ADD THE NAME OF YOUR CSV-FILE HERE
 
 
-const csvfiles = ["test","test","test","test","test","test"];
+const csvfiles = ["wz1","wz2","wz3","wz4","wz7","wz8"];
 
 
 //****************  DONT TOUCH THE LINES BELOW THIS COMMENT  ****************//
