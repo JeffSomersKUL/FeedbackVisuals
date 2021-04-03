@@ -1,4 +1,5 @@
 # import openpyxl module
+from csv import reader
 import openpyxl
 import csv
 
@@ -230,10 +231,58 @@ def get_total_weights_themas(sheet_template, column_len_template):
     return sum_weights
 
 
+#########################################################
+# known data from survey ##############################
+length_r_number = 7
+column_first_letter_rnumber_letter = 'R'
+column_first_letter_rnumber_number = get_column_number(column_first_letter_rnumber_letter)
+column_first_letter_rnumber_not_answered_letter = 'Y'
+column_first_letter_rnumber_not_answered_number = get_column_number(column_first_letter_rnumber_not_answered_letter)
+#########################################################
+
+
+def get_rnummer_of_row(row, sheet_servey):
+    rnumber = 'r'
+    index = 0
+    while index < length_r_number:
+        number = sheet_servey.cell(row=row, column=column_first_letter_rnumber_number+index).value
+        if number == '':
+            rnumber_2 = 'r'
+            index_2 = 0
+            while index_2 < length_r_number:
+                number_2 = sheet_servey.cell(row=row, column=column_first_letter_rnumber_not_answered_number+index).value
+                if number_2 == '':
+                    return 'r0000000'
+                number_2 = int(number_2)
+                number_2 = number_2 - 1
+                rnumber_2 += str(number_2)
+                index_2 += 1
+            return rnumber_2
+        number = int(number)
+        number = number - 1  # for some reason Qualtrics gives the number you give in one extra value
+        rnumber += str(int(number))
+        index += 1
+    return rnumber
+
+def save_rnummeer_student(rnummer):
+    already_saved = False
+    with open('student.csv', 'r') as read_obj:
+        csv_reader = reader(read_obj)
+        for row in csv_reader:
+            if row[0] == rnummer:
+                already_saved = True
+                break
+
+    if not already_saved:
+        with open('student.csv', 'a', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow([rnummer])
+
 
 def create_csv_file(servey, template, name):
     servey_file = 'werkzittingen/' + servey
     template_file = 'werkzittingen/' + template
+
 
     # To open the workbook
     # workbook object is created
@@ -276,8 +325,10 @@ def create_csv_file(servey, template, name):
         row_index = 3
         while row_index < column_len_survey:
             student = sheet_servey.cell(row=row_index, column=column_response_ID_number).value
+            rnummer_student = get_rnummer_of_row(row_index, sheet_servey)
+            save_rnummeer_student(rnummer_student)
             data_student = get_list_data(student, sheet_template, sheet_servey, column_len_template, column_len_survey, row_len_survey, sum_weights)
-            writer.writerow([student] + data_student)
+            writer.writerow([rnummer_student] + data_student)
             sum_plan_van_aanpak += data_student[plan_van_aanpak]
             sum_concepten += data_student[concepten]
             sum_wiskundig_model += data_student[wiskundig_model]
