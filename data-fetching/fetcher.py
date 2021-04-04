@@ -2,6 +2,7 @@
 from csv import reader
 import openpyxl
 import csv
+import hashlib
 
 
 def get_column_number(col_letter):
@@ -84,11 +85,13 @@ def get_column_drag_question(question, sheet_servey, row_len_survey):
     return None
 
 # return the column number as in excel
+
 def get_column_question(question, sheet_servey, row_len_survey, kind):
     if kind == drag:
         return get_column_drag_question(question, sheet_servey, row_len_survey)
     else:
         return get_normal_question(question, sheet_servey, row_len_survey)
+
 
 def get_total_score(list_of_score):
     full_score = 0
@@ -144,8 +147,6 @@ def calculate_score_drag(index_question, answer, sheet_template):
     return score
 
 
-
-
 def get_score(kind, index_question, answer, maximale_score, sheet_template):
     if answer != None and answer != '':
         score = 0
@@ -158,6 +159,7 @@ def get_score(kind, index_question, answer, maximale_score, sheet_template):
         return score
     else:
         return 0
+
 
 # gets the data from the excel file from one student
 def get_list_data(student, sheet_template, sheet_servey, column_len_template, column_len_survey, row_len_survey, sum_weights):
@@ -264,19 +266,29 @@ def get_rnummer_of_row(row, sheet_servey):
         index += 1
     return rnumber
 
-def save_rnummeer_student(rnummer):
+
+def save_rnumber_and_give_hash_student(rnummer):
+    hash_r = None
     already_saved = False
     with open('student.csv', 'r') as read_obj:
         csv_reader = reader(read_obj)
         for row in csv_reader:
-            if row[0] == rnummer:
-                already_saved = True
-                break
+            if row:
+                if row[0] == rnummer:
+                    already_saved = True
+                    hash_r = row[1]  # hash is placed next to the number
+                    break
 
     if not already_saved:
         with open('student.csv', 'a', newline='') as file:
             writer = csv.writer(file)
-            writer.writerow([rnummer])
+            # Creating of the hash ##########################
+            hash_object = hashlib.sha256(rnummer.encode())
+            hex_dig = hash_object.hexdigest()
+            hash_r = hex_dig[::5]
+            # ###############################################
+            writer.writerow([rnummer]+[hash_r])
+    return hash_r
 
 
 def create_csv_file(servey, template, name):
@@ -326,9 +338,9 @@ def create_csv_file(servey, template, name):
         while row_index < column_len_survey:
             student = sheet_servey.cell(row=row_index, column=column_response_ID_number).value
             rnummer_student = get_rnummer_of_row(row_index, sheet_servey)
-            save_rnummeer_student(rnummer_student)
+            hash_r = save_rnumber_and_give_hash_student(rnummer_student)
             data_student = get_list_data(student, sheet_template, sheet_servey, column_len_template, column_len_survey, row_len_survey, sum_weights)
-            writer.writerow([rnummer_student] + data_student)
+            writer.writerow([hash_r] + data_student)
             sum_plan_van_aanpak += data_student[plan_van_aanpak]
             sum_concepten += data_student[concepten]
             sum_wiskundig_model += data_student[wiskundig_model]
